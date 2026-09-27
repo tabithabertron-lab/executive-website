@@ -81,11 +81,6 @@
             box-shadow: 0 22px 44px -14px rgba(15, 23, 42, 0.09);
             transform: translateY(-3px);
         }
-        .progress-ring__circle {
-            transition: stroke-dashoffset 0.65s cubic-bezier(0.16, 1, 0.3, 1);
-            transform: rotate(-90deg);
-            transform-origin: 50% 50%;
-        }
         .bar-fill { transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
         .hero-radial {
             background-image: radial-gradient(circle at 85% 20%, rgba(197, 160, 89, 0.10) 0%, transparent 55%),
@@ -130,7 +125,7 @@
                 <a href="#vision" class="hover:text-gold-dark transition-colors py-2">Vision</a>
                 <a href="#experience" class="hover:text-gold-dark transition-colors py-2">Leadership</a>
                 <a href="#diagnostic" class="hover:text-gold-dark transition-colors py-2 flex items-center gap-1.5">
-                    <span>GTM Simulator</span>
+                    <span>GTM Pressure Test</span>
                     <span class="inline-block w-1.5 h-1.5 rounded-full bg-gold"></span>
                 </a>
                 <a href="#media" class="hover:text-gold-dark transition-colors py-2">Media</a>
@@ -150,11 +145,10 @@
             </button>
         </div>
 
-        <!-- Mobile Navigation Drawer -->
         <div id="mobile-menu" class="hidden lg:hidden bg-cream-50 border-b border-navy-900/10 px-6 py-6 space-y-4 shadow-lg">
             <a href="#vision" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Vision</a>
             <a href="#experience" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Leadership</a>
-            <a href="#diagnostic" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">GTM Strategy Simulator</a>
+            <a href="#diagnostic" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">GTM Pressure Test</a>
             <a href="#media" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Media & Keynotes</a>
             <a href="#pay-it-forward" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Paying It Forward</a>
             <div class="pt-2">
@@ -190,7 +184,7 @@
 
                     <div class="pt-2 flex flex-wrap items-center gap-4">
                         <a href="#diagnostic" class="px-8 py-4 rounded-full bg-navy-800 text-cream-50 font-semibold text-xs tracking-widest uppercase hover:bg-gold hover:text-navy-900 transition-all duration-300 shadow-md">
-                            Take Interactive GTM Quiz
+                            Take GTM Pressure Test
                         </a>
                         <button type="button" onclick="openMentorshipModal()" class="px-8 py-4 rounded-full border border-navy-800/25 bg-white/70 text-navy-800 font-semibold text-xs tracking-widest uppercase hover:border-gold hover:text-gold-dark transition-all">
                             Connect / 30-Min Mentorship
@@ -275,7 +269,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Google Cloud -->
                     <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
@@ -299,7 +292,6 @@
                         </div>
                     </article>
 
-                    <!-- LinkedIn -->
                     <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
@@ -323,7 +315,6 @@
                         </div>
                     </article>
 
-                    <!-- Google Ads ANZ -->
                     <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
@@ -348,7 +339,6 @@
                     </article>
                 </div>
 
-                <!-- Executive Education & Global Footprint Banner -->
                 <div class="mt-10 rounded-2xl bg-cream-100 border border-navy-900/10 p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                     <div class="space-y-1">
                         <div class="text-xs font-bold uppercase tracking-widest text-gold-dark">Executive Education &amp; Network</div>
@@ -364,141 +354,147 @@
             </div>
         </section>
 
-        <!-- Gamified Interactive GTM Quiz -->
+        <!-- The Founder's GTM Pressure Test (HBS Case-Method × Silicon Valley GTM) -->
         <section id="diagnostic" class="py-24 bg-cream-50">
             <div class="max-w-7xl mx-auto px-6 sm:px-12">
-                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                    <span class="inline-block px-3.5 py-1 rounded-full bg-gold/15 text-gold-dark text-xs font-semibold tracking-widest uppercase">Interactive Diagnostic</span>
-                    <h2 class="heading-serif text-3xl sm:text-5xl font-bold text-navy-900">Interactive GTM Strategy Simulator</h2>
-                    <p class="text-base text-charcoal/80 font-light">
-                        Select your company's core GTM operational parameters below to compute an execution readiness score and receive tailored strategic recommendations.
+                <div class="text-center max-w-3xl mx-auto mb-14 space-y-4">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-gold/15 text-gold-dark text-xs font-semibold tracking-widest uppercase">HBS Case-Method × Silicon Valley GTM</span>
+                    <h2 class="heading-serif text-3xl sm:text-5xl font-bold text-navy-900">The Founder’s GTM Pressure Test</h2>
+                    <p class="text-base text-charcoal/85 font-light leading-relaxed">
+                        Skip the generic readiness calculators. Step into three real-world scaling dilemmas I see AI founders navigate every week—make your call, see <strong class="font-semibold text-navy-900">Tabitha’s Take</strong> on what top-decile teams do, and unlock your GTM Leadership Archetype.
                     </p>
                 </div>
 
-                <div class="luxury-card rounded-3xl p-6 sm:p-12 max-w-5xl mx-auto">
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-                        <div class="lg:col-span-7 space-y-8 flex flex-col justify-between">
-                            <div class="space-y-8">
-                                <!-- Parameter 1 -->
-                                <div class="space-y-3">
-                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">1. Company Growth Stage</label>
-                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                                        <button type="button" data-cat="stage" data-val="seed" onclick="setQuiz('stage', 'seed')" class="quiz-btn-stage p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
-                                            <div class="font-bold">Seed / Pre-Seed</div>
-                                            <div class="text-xs text-navy-600 mt-0.5">PMF Discovery</div>
-                                        </button>
-                                        <button type="button" data-cat="stage" data-val="seriesA" onclick="setQuiz('stage', 'seriesA')" class="quiz-btn-stage p-3.5 rounded-xl border border-gold bg-navy-800 text-white text-xs font-medium text-left shadow-sm transition-all">
-                                            <div class="font-bold">Series A</div>
-                                            <div class="text-xs text-cream-200 mt-0.5">Scaling Sales</div>
-                                        </button>
-                                        <button type="button" data-cat="stage" data-val="seriesB" onclick="setQuiz('stage', 'seriesB')" class="quiz-btn-stage p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
-                                            <div class="font-bold">Series B+</div>
-                                            <div class="text-xs text-navy-600 mt-0.5">Enterprise Scale</div>
-                                        </button>
-                                    </div>
+                <div class="luxury-card rounded-3xl p-6 sm:p-10 max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+                        <!-- Left Column: Interactive Case Dilemma Board -->
+                        <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+                            <div class="space-y-6">
+                                <div class="grid grid-cols-3 gap-2.5" id="case-tabs">
+                                    <button type="button" onclick="loadCase(0)" id="case-tab-0" class="p-3 rounded-xl border border-gold bg-navy-800 text-white text-left transition-all">
+                                        <div class="flex items-center justify-between text-xs">
+                                            <span class="font-bold uppercase tracking-wider text-gold">Case 01</span>
+                                            <span id="case-check-0" class="text-xs font-bold text-cream-300">•</span>
+                                        </div>
+                                        <div class="text-xs font-semibold mt-0.5 truncate">The Enterprise Whale</div>
+                                    </button>
+                                    <button type="button" onclick="loadCase(1)" id="case-tab-1" class="p-3 rounded-xl border border-navy-900/10 bg-cream-50 text-navy-800 text-left hover:border-gold transition-all">
+                                        <div class="flex items-center justify-between text-xs">
+                                            <span class="font-bold uppercase tracking-wider text-gold-dark">Case 02</span>
+                                            <span id="case-check-1" class="text-xs font-bold text-navy-600">•</span>
+                                        </div>
+                                        <div class="text-xs font-semibold mt-0.5 truncate">First $15M GTM Hire</div>
+                                    </button>
+                                    <button type="button" onclick="loadCase(2)" id="case-tab-2" class="p-3 rounded-xl border border-navy-900/10 bg-cream-50 text-navy-800 text-left hover:border-gold transition-all">
+                                        <div class="flex items-center justify-between text-xs">
+                                            <span class="font-bold uppercase tracking-wider text-gold-dark">Case 03</span>
+                                            <span id="case-check-2" class="text-xs font-bold text-navy-600">•</span>
+                                        </div>
+                                        <div class="text-xs font-semibold mt-0.5 truncate">Procurement Freeze</div>
+                                    </button>
                                 </div>
 
-                                <!-- Parameter 2 -->
-                                <div class="space-y-3">
-                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">2. Target ACV (Annual Contract Value)</label>
-                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                                        <button type="button" data-cat="acv" data-val="low" onclick="setQuiz('acv', 'low')" class="quiz-btn-acv p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
-                                            <div class="font-bold">&lt; $25k</div>
-                                            <div class="text-xs text-navy-600 mt-0.5">Velocity Motion</div>
-                                        </button>
-                                        <button type="button" data-cat="acv" data-val="mid" onclick="setQuiz('acv', 'mid')" class="quiz-btn-acv p-3.5 rounded-xl border border-gold bg-navy-800 text-white text-xs font-medium text-left shadow-sm transition-all">
-                                            <div class="font-bold">$25k - $100k</div>
-                                            <div class="text-xs text-cream-200 mt-0.5">Mid-Market</div>
-                                        </button>
-                                        <button type="button" data-cat="acv" data-val="high" onclick="setQuiz('acv', 'high')" class="quiz-btn-acv p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
-                                            <div class="font-bold">$100k+</div>
-                                            <div class="text-xs text-navy-600 mt-0.5">Enterprise</div>
-                                        </button>
+                                <div class="p-6 rounded-2xl bg-cream-100 border border-navy-900/10 space-y-3">
+                                    <div class="flex flex-wrap items-center justify-between gap-2">
+                                        <span id="case-context-tag" class="text-xs font-bold uppercase tracking-widest text-gold-dark">Seed → Series A · $600k ARR · 5 Engineers</span>
+                                        <span id="case-number-badge" class="text-xs px-2.5 py-0.5 rounded-full bg-navy-900/10 text-navy-800 font-semibold">Dilemma 1 of 3</span>
                                     </div>
+                                    <h3 id="case-title" class="heading-serif text-2xl sm:text-3xl font-bold text-navy-900 leading-snug">
+                                        The Fortune 500 "Whale" vs. Your Product Roadmap
+                                    </h3>
+                                    <p id="case-scenario" class="text-sm text-charcoal leading-relaxed">
+                                        Your AI startup has $600k ARR across 25 fast-moving mid-market teams. Suddenly, a Fortune 500 bank offers $250k for a pilot—but only if you build custom on-prem connectors and pass a 4-month security review. Your 5 engineers are already maxed out. What’s your call?
+                                    </p>
                                 </div>
 
-                                <!-- Parameter 3 -->
-                                <div class="space-y-3">
-                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">3. Primary Sales Motion</label>
-                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                                        <button type="button" data-cat="motion" data-val="plg" onclick="setQuiz('motion', 'plg')" class="quiz-btn-motion p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
-                                            <div class="font-bold">PLG</div>
-                                            <div class="text-xs text-navy-600 mt-0.5">Product-Led</div>
-                                        </button>
-                                        <button type="button" data-cat="motion" data-val="hybrid" onclick="setQuiz('motion', 'hybrid')" class="quiz-btn-motion p-3.5 rounded-xl border border-gold bg-navy-800 text-white text-xs font-medium text-left shadow-sm transition-all">
-                                            <div class="font-bold">Hybrid</div>
-                                            <div class="text-xs text-cream-200 mt-0.5">PLG + Enterprise</div>
-                                        </button>
-                                        <button type="button" data-cat="motion" data-val="topdown" onclick="setQuiz('motion', 'topdown')" class="quiz-btn-motion p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
-                                            <div class="font-bold">Top-Down</div>
-                                            <div class="text-xs text-navy-600 mt-0.5">Direct Field Sales</div>
+                                <div class="space-y-3" id="case-options-container"></div>
+
+                                <div id="tabitha-take-box" class="hidden p-6 rounded-2xl bg-navy-800 text-cream-50 border border-gold space-y-3 shadow-lg">
+                                    <div class="flex items-center justify-between gap-2">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-6 h-6 rounded-full bg-gold text-navy-900 heading-serif font-bold text-xs flex items-center justify-center">TB</span>
+                                            <span class="text-xs font-bold uppercase tracking-widest text-gold">Tabitha’s Take</span>
+                                        </div>
+                                        <span id="take-verdict-badge" class="text-xs px-2.5 py-1 rounded-full font-semibold"></span>
+                                    </div>
+                                    <p id="take-explanation" class="text-xs sm:text-sm text-cream-200 leading-relaxed font-light"></p>
+                                    <div class="pt-2 flex items-center justify-between border-t border-cream-50/10">
+                                        <span id="take-stat" class="text-xs text-gold font-medium"></span>
+                                        <button type="button" id="next-case-btn" onclick="advanceCase()" class="px-4 py-2 rounded-lg bg-gold text-navy-900 font-bold text-xs uppercase tracking-wider hover:bg-gold-light transition-colors">
+                                            Next Dilemma →
                                         </button>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Readiness Pillar Bars -->
-                            <div class="pt-6 border-t border-navy-900/10 grid grid-cols-1 sm:grid-cols-3 gap-4">
-                                <div class="p-3.5 rounded-xl bg-cream-100 border border-navy-900/5">
-                                    <div class="flex justify-between text-xs font-semibold text-navy-800 mb-1.5">
-                                        <span>Cloud Co-Sell Fit</span>
-                                        <span id="metric-cosell" class="text-gold-dark">92%</span>
+                            <div class="pt-4 border-t border-navy-900/10 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <div class="p-3 rounded-xl bg-cream-100 border border-navy-900/5">
+                                    <div class="flex justify-between text-xs font-semibold text-navy-800 mb-1">
+                                        <span>Roadmap Discipline</span>
+                                        <span id="metric-cosell" class="text-gold-dark">--</span>
                                     </div>
                                     <div class="w-full h-1.5 bg-navy-900/10 rounded-full overflow-hidden">
-                                        <div id="bar-cosell" class="bar-fill h-full bg-gold rounded-full" style="width: 92%"></div>
+                                        <div id="bar-cosell" class="bar-fill h-full bg-gold rounded-full" style="width: 35%"></div>
                                     </div>
                                 </div>
-                                <div class="p-3.5 rounded-xl bg-cream-100 border border-navy-900/5">
-                                    <div class="flex justify-between text-xs font-semibold text-navy-800 mb-1.5">
-                                        <span>Pipeline Velocity</span>
-                                        <span id="metric-velocity" class="text-gold-dark">86%</span>
+                                <div class="p-3 rounded-xl bg-cream-100 border border-navy-900/5">
+                                    <div class="flex justify-between text-xs font-semibold text-navy-800 mb-1">
+                                        <span>Presales Leverage</span>
+                                        <span id="metric-velocity" class="text-gold-dark">--</span>
                                     </div>
                                     <div class="w-full h-1.5 bg-navy-900/10 rounded-full overflow-hidden">
-                                        <div id="bar-velocity" class="bar-fill h-full bg-navy-800 rounded-full" style="width: 86%"></div>
+                                        <div id="bar-velocity" class="bar-fill h-full bg-navy-800 rounded-full" style="width: 35%"></div>
                                     </div>
                                 </div>
-                                <div class="p-3.5 rounded-xl bg-cream-100 border border-navy-900/5">
-                                    <div class="flex justify-between text-xs font-semibold text-navy-800 mb-1.5">
-                                        <span>SE Architecture</span>
-                                        <span id="metric-se" class="text-gold-dark">88%</span>
+                                <div class="p-3 rounded-xl bg-cream-100 border border-navy-900/5">
+                                    <div class="flex justify-between text-xs font-semibold text-navy-800 mb-1">
+                                        <span>Co-Sell Velocity</span>
+                                        <span id="metric-se" class="text-gold-dark">--</span>
                                     </div>
                                     <div class="w-full h-1.5 bg-navy-900/10 rounded-full overflow-hidden">
-                                        <div id="bar-se" class="bar-fill h-full bg-gold-dark rounded-full" style="width: 88%"></div>
+                                        <div id="bar-se" class="bar-fill h-full bg-gold-dark rounded-full" style="width: 35%"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Simulator Output Display -->
+                        <!-- Right Column: Live Decision Profile & Executive Archetype -->
                         <div class="lg:col-span-5 bg-navy-800 text-cream-50 p-8 rounded-2xl space-y-6 flex flex-col justify-between border border-gold-subtle">
-                            <div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs uppercase tracking-widest text-gold font-semibold">Simulator Output</span>
-                                    <span id="quiz-badge" class="text-xs bg-gold/20 text-gold px-2.5 py-1 rounded-full font-medium">Series A · Hybrid</span>
-                                </div>
-
-                                <div class="my-6 text-center relative py-2">
-                                    <svg class="w-36 h-36 mx-auto" viewBox="0 0 120 120">
-                                        <circle class="text-navy-700" stroke-width="8" stroke="currentColor" fill="transparent" r="50" cx="60" cy="60"/>
-                                        <circle id="quiz-ring" class="text-gold progress-ring__circle" stroke-width="8" stroke-dasharray="314.15" stroke-dashoffset="37.7" stroke-linecap="round" stroke="currentColor" fill="transparent" r="50" cx="60" cy="60"/>
-                                    </svg>
-                                    <div class="absolute inset-0 flex flex-col items-center justify-center">
-                                        <span id="quiz-score" class="heading-serif text-4xl font-bold text-white">88</span>
-                                        <span class="text-xs text-cream-300 uppercase tracking-wider">GTM Score</span>
+                            <div class="space-y-6">
+                                <div class="flex items-center justify-between border-b border-cream-50/10 pb-4">
+                                    <div>
+                                        <span class="text-xs uppercase tracking-widest text-gold font-semibold block">Your Executive Profile</span>
+                                        <h3 class="heading-serif text-2xl font-bold text-white mt-0.5">GTM Decision Board</h3>
                                     </div>
+                                    <span id="quiz-badge" class="text-xs bg-gold/20 text-gold px-3 py-1 rounded-full font-semibold">0 of 3 Decided</span>
                                 </div>
 
-                                <h3 class="text-base font-bold text-white mb-2 text-center" id="quiz-status">Optimal Hybrid Expansion Motion</h3>
-                                <div class="space-y-3 pt-3 text-xs text-cream-200 leading-relaxed" id="quiz-recs"></div>
+                                <div class="p-5 rounded-2xl bg-navy-900/70 border border-gold/30 space-y-2 text-center">
+                                    <div class="text-xs uppercase tracking-widest text-gold font-semibold" id="archetype-kicker">Make Your First Call</div>
+                                    <div class="heading-serif text-2xl sm:text-3xl font-bold text-white" id="quiz-status">Awaiting Your Decisions...</div>
+                                    <p class="text-xs text-cream-200 leading-relaxed pt-1" id="archetype-desc">
+                                        Select your move on each of the three founder dilemmas to reveal how your GTM instincts compare against top-performing Silicon Valley AI startups.
+                                    </p>
+                                </div>
+
+                                <div class="space-y-3">
+                                    <div class="text-xs font-bold uppercase tracking-widest text-cream-300">Your Case Decisions</div>
+                                    <div class="space-y-2.5 text-xs" id="quiz-recs"></div>
+                                </div>
                             </div>
 
                             <div class="space-y-2.5 pt-4 border-t border-cream-50/10">
-                                <button type="button" onclick="openMentorshipWithQuiz()" class="w-full py-3.5 px-4 rounded-xl bg-gold text-navy-900 font-bold text-xs uppercase tracking-widest hover:bg-gold-light transition-colors text-center">
-                                    Discuss This Playbook on 30-Min Call
+                                <button type="button" onclick="openMentorshipWithQuiz()" class="w-full py-3.5 px-4 rounded-xl bg-gold text-navy-900 font-bold text-xs uppercase tracking-widest hover:bg-gold-light transition-colors text-center shadow-md">
+                                    Debate My Decisions in a 30-Min Session
                                 </button>
-                                <button type="button" id="copy-playbook-btn" onclick="copyQuizPlaybook()" class="w-full py-2.5 px-4 rounded-xl border border-cream-50/15 text-cream-200 font-medium text-xs hover:border-gold hover:text-gold transition-colors text-center">
-                                    Copy Diagnostic Playbook Summary
-                                </button>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <button type="button" id="copy-playbook-btn" onclick="copyQuizPlaybook()" class="py-2.5 px-3 rounded-xl border border-cream-50/15 text-cream-200 font-medium text-xs hover:border-gold hover:text-gold transition-colors text-center">
+                                        Copy Case Summary
+                                    </button>
+                                    <button type="button" onclick="resetPressureTest()" class="py-2.5 px-3 rounded-xl border border-cream-50/15 text-cream-300 font-medium text-xs hover:border-gold hover:text-gold transition-colors text-center">
+                                        Reset Cases ↺
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -520,7 +516,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Video 1: LinkedIn Talent Connect -->
                     <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between text-xs text-navy-600">
@@ -533,8 +528,6 @@
                             <p class="text-sm text-charcoal/85 leading-relaxed">
                                 Exclusive Talent Connect interview exploring workforce dynamics, employer branding, and organizational culture strategies for high-performing teams.
                             </p>
-
-                            <!-- Optional Inline Video Container -->
                             <div id="video-embed-container" class="hidden pt-2">
                                 <div class="relative w-full overflow-hidden rounded-xl bg-navy-900 aspect-video shadow-inner">
                                     <iframe id="youtube-iframe" class="w-full h-full" src="" title="Tabitha Bertron - LinkedIn Talent Connect Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -555,7 +548,6 @@
                         </div>
                     </article>
 
-                    <!-- Event 2: Google Ads OnAir Academy (August 2025) -->
                     <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between text-xs text-navy-600">
@@ -577,7 +569,6 @@
                         </div>
                     </article>
 
-                    <!-- Video 3: Google Partner Academy -->
                     <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between text-xs text-navy-600">
@@ -804,7 +795,6 @@
                 </button>
             </form>
 
-            <!-- Private Confirmation View -->
             <div id="modal-success" class="hidden space-y-5 py-4 text-center">
                 <div class="w-14 h-14 rounded-full bg-gold/20 text-gold-dark flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
                 <div class="space-y-2">
@@ -835,8 +825,7 @@
         function getNextDayOfWeek(dayIndex) {
             const now = new Date();
             const result = new Date(now);
-            const currentDay = now.getDay();
-            let daysAhead = (dayIndex - currentDay + 7) % 7;
+            let daysAhead = (dayIndex - now.getDay() + 7) % 7;
             if (daysAhead === 0) daysAhead = 7;
             result.setDate(now.getDate() + daysAhead);
             return result.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
@@ -869,92 +858,323 @@
             });
         }
 
-        const quizState = { stage: 'seriesA', acv: 'mid', motion: 'hybrid' };
-        const stageLabels = { seed: 'Seed / Pre-Seed', seriesA: 'Series A', seriesB: 'Series B+' };
-        const acvLabels = { low: '<$25k ACV', mid: '$25k-$100k ACV', high: '$100k+ ACV' };
-        const motionLabels = { plg: 'PLG', hybrid: 'Hybrid', topdown: 'Top-Down' };
-        const quizScores = {
-            stage: { seed: 74, seriesA: 83, seriesB: 89 },
-            acv: { low: 2, mid: 5, high: 7 },
-            motion: { plg: 2, hybrid: 5, topdown: 4 }
-        };
-        const subMetrics = {
-            stage: {
-                seed: { cosell: 78, velocity: 92, se: 74 },
-                seriesA: { cosell: 92, velocity: 86, se: 88 },
-                seriesB: { cosell: 96, velocity: 82, se: 95 }
+        const gtmCases = [
+            {
+                id: 0,
+                shortTitle: "The Enterprise Whale",
+                context: "Seed → Series A · $600k ARR · 5 Engineers",
+                badge: "Dilemma 1 of 3",
+                title: "The Fortune 500 \"Whale\" vs. Your Product Roadmap",
+                scenario: "Your AI startup has $600k ARR across 25 fast-moving mid-market teams. Suddenly, a Fortune 500 bank offers $250k for a pilot—but only if you build custom on-prem connectors and pass a 4-month security review. Your 5 engineers are already maxed out. What’s your call?",
+                options: [
+                    {
+                        key: "A",
+                        label: "Chase the Whale",
+                        sub: "Pause the core roadmap and put two engineers on custom bank connectors to land a marquee logo.",
+                        verdict: "Common Founder Trap",
+                        isOptimal: false,
+                        take: "Turning your Seed/Series A engineering team into a custom services shop for one bank stalls the product velocity that got you to $600k ARR. Nine times out of ten, custom one-off pilots churn or stall in procurement.",
+                        stat: "Benchmark: 72% of custom pre-Series B pilots fail to convert to multi-year ARR.",
+                        scores: { discipline: 48, presales: 55, cosell: 50 }
+                    },
+                    {
+                        key: "B",
+                        label: "Walk Away Completely",
+                        sub: "Decline all enterprise inquiries for the next 18 months and stay 100% self-serve.",
+                        verdict: "Safe, But Leaves Upside on the Table",
+                        isOptimal: false,
+                        take: "Protecting engineering focus is smart, but walking away without testing if the buyer will accept a standard cloud deployment forfeits valuable enterprise design-partner signal.",
+                        stat: "Insight: Top AI startups use scoped cloud sandboxes to qualify enterprise pull.",
+                        scores: { discipline: 88, presales: 60, cosell: 55 }
+                    },
+                    {
+                        key: "C",
+                        label: "Scope a Paid Cloud-VPC Sandbox Pilot",
+                        sub: "Propose a 30-day paid pilot deployed inside their existing Google Cloud VPC using your standard APIs.",
+                        verdict: "★ Top-Decile Founder Playbook",
+                        isOptimal: true,
+                        take: "Spot on. By deploying inside the buyer's existing cloud VPC using your standard product, you bypass 80% of InfoSec friction, protect your engineering roadmap, and force the buyer to prove real commitment before you build anything custom.",
+                        stat: "Result: 3x faster security sign-off & zero roadmap derailment.",
+                        scores: { discipline: 96, presales: 94, cosell: 92 }
+                    }
+                ]
             },
-            motion: {
-                plg: { cosell: -4, velocity: 5, se: -5 },
-                hybrid: { cosell: 3, velocity: 2, se: 3 },
-                topdown: { cosell: 4, velocity: -4, se: 5 }
+            {
+                id: 1,
+                shortTitle: "First $15M GTM Hire",
+                context: "Post-Series A · $1.8M ARR · Founder-Led Sales",
+                badge: "Dilemma 2 of 3",
+                title: "Breaking the Founder-Led Sales Bottleneck",
+                scenario: "You just raised a $15M Series A. You’ve closed every deal yourself, but you’re now spending 30 hours a week running technical demos, scoping POCs, and answering architecture questionnaires. Who is your very first GTM hire?",
+                options: [
+                    {
+                        key: "A",
+                        label: "Hire a Big-Tech VP of Sales",
+                        sub: "Recruit an executive who managed 60 reps at a public SaaS company to build the org chart.",
+                        verdict: "The #1 Series A Hiring Mistake",
+                        isOptimal: false,
+                        take: "Hiring a big-company VP of Sales before you have a repeatable playbook almost always misfires. They are built to scale an existing machine from $20M to $100M—not to run messy technical AI discovery calls at $1.8M ARR.",
+                        stat: "Data point: Average tenure of a premature Series A VP of Sales is <11 months.",
+                        scores: { discipline: 52, presales: 45, cosell: 60 }
+                    },
+                    {
+                        key: "B",
+                        label: "Pair 2 Builder AEs with a Founding Solutions Engineer",
+                        sub: "Hire two hungry mid-market AEs alongside a technical Solutions Consultant to own POCs.",
+                        verdict: "★ Top-Decile Founder Playbook",
+                        isOptimal: true,
+                        take: "Having led Solutions Consulting at LinkedIn and advised hundreds of Cloud startups, this is the highest-leverage unlock at Series A. A founding Solutions Engineer (SE) immediately takes technical demos and POC architecture off the founder's plate while doubling AE win rates.",
+                        stat: "Impact: Frees 20+ hrs/wk of founder time & lifts technical POC conversion by 40%+.",
+                        scores: { discipline: 95, presales: 98, cosell: 90 }
+                    },
+                    {
+                        key: "C",
+                        label: "Hire 5 Outbound SDRs Immediately",
+                        sub: "Flood the calendar with cold outbound meetings to 10x top-of-funnel volume.",
+                        verdict: "High Burn, Low Conversion",
+                        isOptimal: false,
+                        take: "If you are already drowning in 30 hours a week of technical demos and POCs, adding 5 SDRs just creates a massive mid-funnel bottleneck—burning cash while prospects stall in unstaffed evaluations.",
+                        stat: "Warning: Scaling top-of-funnel before technical presales spikes CAC payback.",
+                        scores: { discipline: 58, presales: 42, cosell: 52 }
+                    }
+                ]
+            },
+            {
+                id: 2,
+                shortTitle: "Procurement Freeze",
+                context: "Series A/B · $120k ACV Deal · End of Quarter",
+                badge: "Dilemma 3 of 3",
+                title: "Unlocking a Frozen Enterprise Budget",
+                scenario: "A $120k/year enterprise AI deal has an enthusiastic 'yes' from the VP of Engineering, but Procurement says onboarding a net-new vendor takes 6–9 months and new software budget is frozen. How do you close it this quarter?",
+                options: [
+                    {
+                        key: "A",
+                        label: "Slash Price by 45% for a Quick Signature",
+                        sub: "Offer a massive end-of-quarter discount if they sign a 1-year order form this week.",
+                        verdict: "Erodes Valuation & Misses the Real Blocker",
+                        isOptimal: false,
+                        take: "When a buyer says 'onboarding a net-new vendor takes 6 months and software budget is frozen,' a 45% discount doesn't solve their problem—it just permanently anchors your ACV at half price while still getting stuck in vendor onboarding.",
+                        stat: "Trap: Heavy discounting rarely bypasses legal/vendor onboarding freezes.",
+                        scores: { discipline: 50, presales: 60, cosell: 45 }
+                    },
+                    {
+                        key: "B",
+                        label: "Route via Hyperscaler Cloud Marketplace Commit",
+                        sub: "Transact on Google Cloud Marketplace so the buyer draws down pre-approved cloud commit.",
+                        verdict: "★ Top-Decile Founder Playbook",
+                        isOptimal: true,
+                        take: "This is the ultimate enterprise GTM accelerator in Silicon Valley right now. Because the enterprise already has a pre-committed cloud contract with Google Cloud, transacting through Cloud Marketplace lets them use existing budget on existing paper—turning a 6-month vendor review into a 3-week close.",
+                        stat: "Unlock: Preserves 100% of your $120k ACV & taps pre-committed cloud budgets.",
+                        scores: { discipline: 94, presales: 92, cosell: 99 }
+                    },
+                    {
+                        key: "C",
+                        label: "Give 6 Months Free Until Next Fiscal Year",
+                        sub: "Let them use the platform at no cost now and hope they sign when budgets reset.",
+                        verdict: "Unpaid Risk & Cloud Compute Burn",
+                        isOptimal: false,
+                        take: "Unlike traditional SaaS, giving away 6 months of an AI product means you are paying real GPU/TPU inference costs out of pocket with zero contractual lock-in—and urgency evaporates once the team gets it for free.",
+                        stat: "Rule of thumb: Never subsidize enterprise AI inference without a committed contract.",
+                        scores: { discipline: 45, presales: 55, cosell: 50 }
+                    }
+                ]
             }
-        };
-        const quizRecsMap = {
-            seed: "Prioritize fast PMF iteration using Google Cloud Startup credits, AI model garden access, and lightweight API endpoints.",
-            seriesA: "Establish repeatable Solutions Engineering and cloud marketplace co-sell positioning to accelerate Series A pipeline.",
-            seriesB: "Deploy multi-region AI infrastructure redundancy, enterprise governance, and global partner co-selling.",
-            low: "Focus on automated self-serve onboarding with low-friction product trial flows and usage-based triggers.",
-            mid: "Align product-led traction with inside sales and technical specialists for rapid mid-market expansion.",
-            high: "Build dedicated enterprise presales, SOC2/HIPAA compliance readiness, and custom executive POC playbooks.",
-            plg: "Leverage product telemetry and usage analytics to flag high-value workspace accounts for founder-led outreach.",
-            hybrid: "Combine self-serve developer adoption with executive field selling and cloud marketplace commit drawdown.",
-            topdown: "Deploy high-touch technical solution architects, ROI value frameworks, and executive sponsor alignment."
-        };
+        ];
 
-        function setQuiz(category, value) {
-            quizState[category] = value;
-            document.querySelectorAll(`.quiz-btn-${category}`).forEach(btn => {
-                const sub = btn.querySelector('div:last-child');
-                if (btn.getAttribute('data-val') === value) {
-                    btn.className = `quiz-btn-${category} p-3.5 rounded-xl border border-gold bg-navy-800 text-white text-xs font-medium text-left shadow-sm transition-all`;
-                    if (sub) sub.className = 'text-xs text-cream-200 mt-0.5';
+        let activeCaseIndex = 0;
+        const userChoices = [null, null, null];
+
+        function loadCase(index) {
+            activeCaseIndex = index;
+            const c = gtmCases[index];
+
+            for (let i = 0; i < 3; i++) {
+                const tab = document.getElementById(`case-tab-${i}`);
+                const check = document.getElementById(`case-check-${i}`);
+                const chosen = userChoices[i];
+                if (i === index) {
+                    tab.className = "p-3 rounded-xl border border-gold bg-navy-800 text-white text-left transition-all shadow-sm";
+                    tab.querySelector('span:first-child').className = "font-bold uppercase tracking-wider text-gold";
                 } else {
-                    btn.className = `quiz-btn-${category} p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all`;
-                    if (sub) sub.className = 'text-xs text-navy-600 mt-0.5';
+                    tab.className = "p-3 rounded-xl border border-navy-900/10 bg-cream-50 text-navy-800 text-left hover:border-gold transition-all";
+                    tab.querySelector('span:first-child').className = "font-bold uppercase tracking-wider text-gold-dark";
                 }
-            });
-            calculateQuiz();
+                if (chosen) {
+                    check.textContent = chosen.isOptimal ? "★" : "✓";
+                    check.className = chosen.isOptimal ? "text-xs font-bold text-gold" : "text-xs font-bold text-gold-dark";
+                } else {
+                    check.textContent = "•";
+                    check.className = i === index ? "text-xs font-bold text-cream-300" : "text-xs font-bold text-navy-600";
+                }
+            }
+
+            document.getElementById('case-context-tag').textContent = c.context;
+            document.getElementById('case-number-badge').textContent = c.badge;
+            document.getElementById('case-title').textContent = c.title;
+            document.getElementById('case-scenario').textContent = c.scenario;
+
+            const optionsContainer = document.getElementById('case-options-container');
+            const selectedOption = userChoices[index];
+
+            optionsContainer.innerHTML = c.options.map((opt, optIdx) => {
+                const isSelected = selectedOption && selectedOption.key === opt.key;
+                const baseCls = isSelected
+                    ? (opt.isOptimal
+                        ? "w-full p-4 rounded-xl border-2 border-gold bg-navy-800 text-white text-left transition-all shadow-md"
+                        : "w-full p-4 rounded-xl border-2 border-navy-800 bg-navy-900/5 text-navy-900 text-left transition-all")
+                    : "w-full p-4 rounded-xl border border-navy-900/10 bg-white text-navy-900 text-left hover:border-gold transition-all";
+                const badgeCls = isSelected
+                    ? (opt.isOptimal ? "bg-gold text-navy-900" : "bg-navy-800 text-white")
+                    : "bg-cream-100 text-navy-800";
+                const subCls = isSelected && opt.isOptimal ? "text-cream-200" : "text-charcoal/80";
+
+                return `
+                    <button type="button" onclick="chooseCaseOption(${index}, ${optIdx})" class="${baseCls}">
+                        <div class="flex items-start gap-3.5">
+                            <span class="w-7 h-7 rounded-lg ${badgeCls} font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">${opt.key}</span>
+                            <div class="space-y-1">
+                                <div class="text-sm font-bold">${opt.label}</div>
+                                <div class="text-xs ${subCls} leading-relaxed">${opt.sub}</div>
+                            </div>
+                        </div>
+                    </button>
+                `;
+            }).join('');
+
+            const takeBox = document.getElementById('tabitha-take-box');
+            if (selectedOption) {
+                takeBox.classList.remove('hidden');
+                const verdictBadge = document.getElementById('take-verdict-badge');
+                verdictBadge.textContent = selectedOption.verdict;
+                verdictBadge.className = selectedOption.isOptimal
+                    ? "text-xs px-2.5 py-1 rounded-full font-semibold bg-gold text-navy-900"
+                    : "text-xs px-2.5 py-1 rounded-full font-semibold bg-cream-50/15 text-gold-light";
+                document.getElementById('take-explanation').textContent = selectedOption.take;
+                document.getElementById('take-stat').textContent = selectedOption.stat;
+
+                const nextBtn = document.getElementById('next-case-btn');
+                if (index < 2) {
+                    nextBtn.textContent = `Next: Case 0${index + 2} →`;
+                    nextBtn.classList.remove('hidden');
+                } else {
+                    const unanswered = userChoices.findIndex(ch => ch === null);
+                    if (unanswered !== -1) {
+                        nextBtn.textContent = `Complete Case 0${unanswered + 1} →`;
+                        nextBtn.classList.remove('hidden');
+                    } else {
+                        nextBtn.classList.add('hidden');
+                    }
+                }
+            } else {
+                takeBox.classList.add('hidden');
+            }
+
+            updateDecisionBoard();
         }
 
-        function getCurrentScore() {
-            return Math.min(Math.max(quizScores.stage[quizState.stage] + quizScores.acv[quizState.acv] + quizScores.motion[quizState.motion], 65), 98);
+        function chooseCaseOption(caseIdx, optIdx) {
+            userChoices[caseIdx] = gtmCases[caseIdx].options[optIdx];
+            loadCase(caseIdx);
         }
 
-        function calculateQuiz() {
-            const finalScore = getCurrentScore();
-            document.getElementById('quiz-ring').style.strokeDashoffset = 314.15 - (314.15 * finalScore / 100);
-            document.getElementById('quiz-score').textContent = finalScore;
-            document.getElementById('quiz-badge').textContent = `${stageLabels[quizState.stage]} · ${motionLabels[quizState.motion]}`;
+        function advanceCase() {
+            if (activeCaseIndex < 2) loadCase(activeCaseIndex + 1);
+            else {
+                const unanswered = userChoices.findIndex(ch => ch === null);
+                if (unanswered !== -1) loadCase(unanswered);
+            }
+        }
 
+        function resetPressureTest() {
+            userChoices[0] = null;
+            userChoices[1] = null;
+            userChoices[2] = null;
+            loadCase(0);
+        }
+
+        function updateDecisionBoard() {
+            const answered = userChoices.filter(Boolean);
+            const count = answered.length;
+            document.getElementById('quiz-badge').textContent = `${count} of 3 Decided`;
+
+            if (count === 0) {
+                document.getElementById('metric-cosell').textContent = "--";
+                document.getElementById('bar-cosell').style.width = "30%";
+                document.getElementById('metric-velocity').textContent = "--";
+                document.getElementById('bar-velocity').style.width = "30%";
+                document.getElementById('metric-se').textContent = "--";
+                document.getElementById('bar-se').style.width = "30%";
+            } else {
+                const avgDisc = Math.round(answered.reduce((s, c) => s + c.scores.discipline, 0) / count);
+                const avgPre = Math.round(answered.reduce((s, c) => s + c.scores.presales, 0) / count);
+                const avgCosell = Math.round(answered.reduce((s, c) => s + c.scores.cosell, 0) / count);
+
+                document.getElementById('metric-cosell').textContent = `${avgDisc}%`;
+                document.getElementById('bar-cosell').style.width = `${avgDisc}%`;
+                document.getElementById('metric-velocity').textContent = `${avgPre}%`;
+                document.getElementById('bar-velocity').style.width = `${avgPre}%`;
+                document.getElementById('metric-se').textContent = `${avgCosell}%`;
+                document.getElementById('bar-se').style.width = `${avgCosell}%`;
+            }
+
+            const kickerEl = document.getElementById('archetype-kicker');
             const statusEl = document.getElementById('quiz-status');
-            statusEl.textContent = finalScore >= 90 ? "Optimal Enterprise & Cloud Co-Sell Architecture" :
-                                   finalScore >= 82 ? "High-Growth Scale & Hybrid Velocity Motion" :
-                                                      "Foundational Product-Market Fit & Traction Phase";
+            const descEl = document.getElementById('archetype-desc');
+            const optimalCount = answered.filter(c => c.isOptimal).length;
 
-            const baseSub = subMetrics.stage[quizState.stage];
-            const modSub = subMetrics.motion[quizState.motion];
-            const cosellVal = Math.min(99, Math.max(68, baseSub.cosell + modSub.cosell));
-            const velVal = Math.min(99, Math.max(68, baseSub.velocity + modSub.velocity));
-            const seVal = Math.min(99, Math.max(68, baseSub.se + modSub.se));
+            if (count === 0) {
+                kickerEl.textContent = "Interactive Case Study";
+                statusEl.textContent = "Make Your First Call";
+                descEl.textContent = "Click Option A, B, or C on the left to test your instincts against real Silicon Valley startup scaling scenarios.";
+            } else if (count < 3) {
+                kickerEl.textContent = `In Progress · ${3 - count} Dilemma${3 - count > 1 ? 's' : ''} Remaining`;
+                statusEl.textContent = optimalCount === count ? "Sharp Strategic Instincts So Far" : "Pragmatic Operator Profile Forming";
+                descEl.textContent = `You've locked in ${count} of 3 decisions. Complete the remaining case${3 - count > 1 ? 's' : ''} to unlock your full GTM Leadership Archetype.`;
+            } else {
+                if (optimalCount === 3) {
+                    kickerEl.textContent = "Unlocked Archetype · 3/3 Top-Decile Plays";
+                    statusEl.textContent = "The Cloud-Native Scale Architect";
+                    descEl.textContent = "You think like a seasoned Silicon Valley GTM leader: protecting core product velocity with scoped cloud VPC pilots, pairing founding Solutions Engineers with builder AEs, and using Cloud Marketplace commits to crush enterprise procurement cycles.";
+                } else if (optimalCount === 2) {
+                    kickerEl.textContent = "Unlocked Archetype · 2/3 Top-Decile Plays";
+                    statusEl.textContent = "The High-Velocity Technical Builder";
+                    descEl.textContent = "Strong commercial instincts with a bias for action. Tightening how you leverage technical presales (SEs) or hyperscaler co-sell commits will help you close 6-figure enterprise deals without burning out your engineering team.";
+                } else {
+                    kickerEl.textContent = "Unlocked Archetype · Growth Stage Hustler";
+                    statusEl.textContent = "The Relentless Revenue Chaser";
+                    descEl.textContent = "You aren't afraid to swing big for logos and top-of-funnel volume—but watch out for custom dev-shop traps, premature executive hires, and heavy discounting when scaling from Seed to Series B.";
+                }
+            }
 
-            document.getElementById('metric-cosell').textContent = `${cosellVal}%`;
-            document.getElementById('bar-cosell').style.width = `${cosellVal}%`;
-            document.getElementById('metric-velocity').textContent = `${velVal}%`;
-            document.getElementById('bar-velocity').style.width = `${velVal}%`;
-            document.getElementById('metric-se').textContent = `${seVal}%`;
-            document.getElementById('bar-se').style.width = `${seVal}%`;
-
-            document.getElementById('quiz-recs').innerHTML = `
-                <div class="flex items-start gap-2.5"><span class="text-gold font-bold">1.</span><span>${quizRecsMap[quizState.stage]}</span></div>
-                <div class="flex items-start gap-2.5"><span class="text-gold font-bold">2.</span><span>${quizRecsMap[quizState.acv]}</span></div>
-                <div class="flex items-start gap-2.5"><span class="text-gold font-bold">3.</span><span>${quizRecsMap[quizState.motion]}</span></div>
-            `;
+            document.getElementById('quiz-recs').innerHTML = gtmCases.map((c, idx) => {
+                const ch = userChoices[idx];
+                if (!ch) {
+                    return `
+                        <button type="button" onclick="loadCase(${idx})" class="w-full p-3 rounded-xl bg-navy-900/40 border border-cream-50/10 flex items-center justify-between text-left hover:border-gold/50 transition-colors">
+                            <span class="text-cream-300">Case 0${idx + 1}: ${c.shortTitle}</span>
+                            <span class="text-gold text-xs font-semibold">Decide →</span>
+                        </button>
+                    `;
+                }
+                return `
+                    <button type="button" onclick="loadCase(${idx})" class="w-full p-3 rounded-xl bg-navy-900/80 border ${ch.isOptimal ? 'border-gold/50' : 'border-cream-50/15'} text-left space-y-1 hover:border-gold transition-colors">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-white">Case 0${idx + 1}: Option ${ch.key} — ${ch.label}</span>
+                            <span class="text-xs ${ch.isOptimal ? 'text-gold' : 'text-cream-300'} font-semibold">${ch.isOptimal ? '★ Optimal' : 'Reviewed'}</span>
+                        </div>
+                        <div class="text-cream-300 text-xs truncate">${ch.verdict}</div>
+                    </button>
+                `;
+            }).join('');
         }
 
         function getPlaybookSummaryText() {
-            const score = getCurrentScore();
-            return `GTM Diagnostic Profile: ${stageLabels[quizState.stage]} | ${acvLabels[quizState.acv]} | ${motionLabels[quizState.motion]} Motion (Readiness Score: ${score}/100)\n• ${quizRecsMap[quizState.stage]}\n• ${quizRecsMap[quizState.acv]}\n• ${quizRecsMap[quizState.motion]}`;
+            const status = document.getElementById('quiz-status').textContent;
+            const lines = gtmCases.map((c, i) => {
+                const ch = userChoices[i];
+                return ch ? `• Case 0${i + 1} (${c.shortTitle}): Chose [${ch.key}] ${ch.label} — ${ch.verdict}` : `• Case 0${i + 1} (${c.shortTitle}): Not yet decided`;
+            });
+            return `Founder's GTM Pressure Test — Archetype: ${status}\n` + lines.join('\n');
         }
 
         function copyQuizPlaybook() {
@@ -962,14 +1182,13 @@
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(getPlaybookSummaryText());
             }
-            btn.textContent = "✓ Copied Playbook to Clipboard!";
-            setTimeout(() => { btn.textContent = "Copy Diagnostic Playbook Summary"; }, 2500);
+            btn.textContent = "✓ Copied Summary!";
+            setTimeout(() => { btn.textContent = "Copy Case Summary"; }, 2500);
         }
 
         function openMentorshipWithQuiz() {
-            const score = getCurrentScore();
             document.getElementById('mentor-topic').value = "Startup GTM & Cloud Scale Strategy";
-            document.getElementById('mentor-notes').value = `GTM Simulator Profile: ${stageLabels[quizState.stage]}, ${acvLabels[quizState.acv]}, ${motionLabels[quizState.motion]} Motion (GTM Score: ${score}/100).\n\nKey questions for our 30-min session: `;
+            document.getElementById('mentor-notes').value = `${getPlaybookSummaryText()}\n\nWhat I'd love to jam on during our 30-min session: `;
             openMentorshipModal();
         }
 
@@ -1082,7 +1301,7 @@
         populateUpcomingSlotDates();
         const firstSlotBtn = document.querySelector('.slot-btn');
         if (firstSlotBtn) selectTimeSlot(firstSlotBtn);
-        calculateQuiz();
+        loadCase(0);
     </script>
 </body>
 </html>
