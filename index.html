@@ -21,7 +21,7 @@
     <!-- Inline SVG Favicon (Navy & Gold TB Monogram) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230F172A'/%3E%3Crect x='3' y='3' width='58' height='58' rx='13' fill='none' stroke='%23C5A059' stroke-width='1.5' stroke-opacity='0.6'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-weight='bold' font-size='26' fill='%23C5A059' letter-spacing='1'%3ETB%3C/text%3E%3C/svg%3E">
 
-    <!-- Fonts: Cormorant Garamond for serif headings & Plus Jakarta Sans for body -->
+    <!-- Fonts: Cormorant Garamond & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -33,24 +33,9 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: {
-                            900: '#0B132B',
-                            800: '#0F172A',
-                            700: '#1E293B',
-                            600: '#334155'
-                        },
-                        cream: {
-                            50: '#FCFCF9',
-                            100: '#F8FAF9',
-                            200: '#F3F4F1',
-                            300: '#E8ECE6'
-                        },
-                        gold: {
-                            DEFAULT: '#C5A059',
-                            light: '#DFBF7A',
-                            dark: '#A37F3C',
-                            muted: '#E6D7B8'
-                        },
+                        navy: { 900: '#0B132B', 800: '#0F172A', 700: '#1E293B', 600: '#334155' },
+                        cream: { 50: '#FCFCF9', 100: '#F8FAF9', 200: '#F3F4F1', 300: '#E8ECE6' },
+                        gold: { DEFAULT: '#C5A059', light: '#DFBF7A', dark: '#A37F3C', muted: '#E6D7B8' },
                         charcoal: '#334155'
                     },
                     fontFamily: {
@@ -63,11 +48,18 @@
     </script>
 
     <style>
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 5rem;
+        :root {
+            --navy-900: #0B132B;
+            --navy-800: #0F172A;
+            --navy-700: #1E293B;
+            --navy-600: #334155;
+            --cream-50: #FCFCF9;
+            --cream-100: #F8FAF9;
+            --gold: #C5A059;
+            --gold-light: #DFBF7A;
+            --gold-dark: #A37F3C;
         }
-
+        html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
         body {
             background-color: #F8FAF9;
             color: #334155;
@@ -75,46 +67,53 @@
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
-
-        .heading-serif {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-        }
-
-        .border-gold-subtle {
-            border-color: rgba(197, 160, 89, 0.28);
-        }
-
-        .gold-accent-text {
-            color: #A37F3C;
-        }
-
+        .heading-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+        .border-gold-subtle { border-color: rgba(197, 160, 89, 0.28); }
+        .gold-accent-text { color: #A37F3C; }
         .luxury-card {
             background: #ffffff;
             border: 1px solid rgba(15, 23, 42, 0.07);
             box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
             transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
-
         .luxury-card:hover {
             border-color: rgba(197, 160, 89, 0.45);
             box-shadow: 0 22px 44px -14px rgba(15, 23, 42, 0.09);
             transform: translateY(-3px);
         }
-
         .progress-ring__circle {
             transition: stroke-dashoffset 0.65s cubic-bezier(0.16, 1, 0.3, 1);
             transform: rotate(-90deg);
             transform-origin: 50% 50%;
         }
-
-        .bar-fill {
-            transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
+        .bar-fill { transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
         .hero-radial {
             background-image: radial-gradient(circle at 85% 20%, rgba(197, 160, 89, 0.10) 0%, transparent 55%),
                               radial-gradient(circle at 10% 80%, rgba(15, 23, 42, 0.04) 0%, transparent 50%);
         }
+        .bg-navy-900 { background-color: #0B132B; }
+        .bg-navy-800 { background-color: #0F172A; }
+        .bg-cream-50 { background-color: #FCFCF9; }
+        .bg-cream-100 { background-color: #F8FAF9; }
+        .bg-gold { background-color: #C5A059; }
+        .bg-gold-dark { background-color: #A37F3C; }
+        .text-navy-900 { color: #0B132B; }
+        .text-navy-800 { color: #0F172A; }
+        .text-navy-700 { color: #1E293B; }
+        .text-navy-600 { color: #334155; }
+        .text-cream-50 { color: #FCFCF9; }
+        .text-cream-200 { color: #F3F4F1; }
+        .text-cream-300 { color: #E8ECE6; }
+        .text-gold { color: #C5A059; }
+        .text-gold-dark { color: #A37F3C; }
+        .text-charcoal { color: #334155; }
+        .border-gold { border-color: #C5A059; }
+        .hover\:bg-gold:hover { background-color: #C5A059; }
+        .hover\:bg-gold-light:hover { background-color: #DFBF7A; }
+        .hover\:text-navy-900:hover { color: #0B132B; }
+        .hover\:text-gold:hover { color: #C5A059; }
+        .hover\:text-gold-dark:hover { color: #A37F3C; }
+        .hover\:border-gold:hover { border-color: #C5A059; }
     </style>
 </head>
 <body class="selection:bg-gold/20 selection:text-navy-900">
@@ -156,7 +155,7 @@
             <a href="#vision" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Vision</a>
             <a href="#experience" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Leadership</a>
             <a href="#diagnostic" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">GTM Strategy Simulator</a>
-            <a href="#media" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Media &amp; Keynotes</a>
+            <a href="#media" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Media & Keynotes</a>
             <a href="#pay-it-forward" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Paying It Forward</a>
             <div class="pt-2">
                 <button type="button" onclick="closeMobileMenu(); openMentorshipModal();" class="w-full py-3 rounded-full bg-navy-800 text-cream-50 text-xs tracking-wider uppercase font-semibold">
@@ -170,7 +169,6 @@
         <!-- Hero Section -->
         <section id="vision" class="hero-radial pt-32 pb-20 lg:pt-44 lg:pb-28 px-6 sm:px-12">
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-
                 <div class="lg:col-span-7 space-y-8">
                     <div class="flex flex-wrap items-center gap-2.5">
                         <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-900/5 border border-navy-900/10 text-navy-800 text-xs font-semibold tracking-wider uppercase">
@@ -219,7 +217,6 @@
                 <div class="lg:col-span-5">
                     <div class="relative mx-auto max-w-md lg:max-w-none">
                         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-gold/25 to-navy-900/10 blur-xl opacity-60 pointer-events-none"></div>
-
                         <div class="relative rounded-2xl bg-white p-8 border border-navy-900/10 shadow-xl space-y-6">
                             <div class="flex items-center justify-between pb-6 border-b border-navy-900/10">
                                 <div>
@@ -242,7 +239,7 @@
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <svg class="w-5 h-5 text-gold-dark shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                    <span><strong class="text-navy-900">Google Ads ANZ:</strong> Managed full P&amp;L, customer growth, and ad strategy across Australia and New Zealand.</span>
+                                    <span><strong class="text-navy-900">Google Ads ANZ:</strong> Led mid-market sales, customer growth, and digital ad strategy across Australia and New Zealand.</span>
                                 </div>
                             </div>
 
@@ -250,7 +247,6 @@
                                 <blockquote class="p-4 rounded-xl bg-cream-100 border border-navy-900/5 text-xs text-navy-700 italic leading-relaxed">
                                     "Effective GTM isn't just about selling a product—it's about building repeatable value, technical alignment, and trust with founders."
                                 </blockquote>
-
                                 <div class="flex items-center justify-between text-xs pt-1">
                                     <span class="text-navy-600 font-medium">San Francisco Bay Area</span>
                                     <a href="https://www.linkedin.com/in/tabithabertron/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-semibold text-navy-800 hover:text-gold-dark transition-colors">
@@ -262,14 +258,12 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- Leadership Journey -->
         <section id="experience" class="py-24 bg-white border-y border-navy-900/5">
             <div class="max-w-7xl mx-auto px-6 sm:px-12">
-
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                     <div class="max-w-2xl">
                         <p class="text-xs uppercase tracking-widest text-gold-dark font-semibold mb-2">Verified Experience &amp; Track Record</p>
@@ -339,16 +333,16 @@
                             <h3 class="heading-serif text-2xl font-bold text-navy-900">Head of Mid-Market Sales &amp; Lead Gen</h3>
                             <p class="text-xs text-navy-600 font-medium">Australia &amp; New Zealand (ANZ)</p>
                             <p class="text-sm text-charcoal/85 leading-relaxed pt-2">
-                                Led Google's Mid-Market advertising business across ANZ. Responsible for full P&amp;L, commercial strategy, multi-channel growth, and scaling high-performing sales organizations.
+                                Led Google's Mid-Market advertising and lead generation business across ANZ. Directed commercial strategy, multi-channel customer growth, and high-performing sales organizations.
                             </p>
                             <div class="flex flex-wrap gap-1.5 pt-2">
-                                <span class="text-xs px-2.5 py-1 rounded-md bg-cream-100 text-navy-700">Full P&amp;L Ownership</span>
+                                <span class="text-xs px-2.5 py-1 rounded-md bg-cream-100 text-navy-700">Mid-Market Sales &amp; Lead Gen</span>
                                 <span class="text-xs px-2.5 py-1 rounded-md bg-cream-100 text-navy-700">Commercial Strategy</span>
                                 <span class="text-xs px-2.5 py-1 rounded-md bg-cream-100 text-navy-700">ANZ Region</span>
                             </div>
                         </div>
                         <div class="pt-6 mt-6 border-t border-navy-900/5 text-xs font-semibold text-navy-800 flex items-center justify-between">
-                            <span>Focus: P&amp;L Management &amp; Commercial Growth</span>
+                            <span>Focus: Mid-Market Sales &amp; Commercial Growth</span>
                             <span class="text-gold-dark">03</span>
                         </div>
                     </article>
@@ -367,14 +361,12 @@
                         </button>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- Gamified Interactive GTM Quiz -->
         <section id="diagnostic" class="py-24 bg-cream-50">
             <div class="max-w-7xl mx-auto px-6 sm:px-12">
-
                 <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                     <span class="inline-block px-3.5 py-1 rounded-full bg-gold/15 text-gold-dark text-xs font-semibold tracking-widest uppercase">Interactive Diagnostic</span>
                     <h2 class="heading-serif text-3xl sm:text-5xl font-bold text-navy-900">Interactive GTM Strategy Simulator</h2>
@@ -385,14 +377,11 @@
 
                 <div class="luxury-card rounded-3xl p-6 sm:p-12 max-w-5xl mx-auto">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-
                         <div class="lg:col-span-7 space-y-8 flex flex-col justify-between">
                             <div class="space-y-8">
                                 <!-- Parameter 1 -->
                                 <div class="space-y-3">
-                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">
-                                        1. Company Growth Stage
-                                    </label>
+                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">1. Company Growth Stage</label>
                                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                         <button type="button" data-cat="stage" data-val="seed" onclick="setQuiz('stage', 'seed')" class="quiz-btn-stage p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
                                             <div class="font-bold">Seed / Pre-Seed</div>
@@ -411,9 +400,7 @@
 
                                 <!-- Parameter 2 -->
                                 <div class="space-y-3">
-                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">
-                                        2. Target ACV (Annual Contract Value)
-                                    </label>
+                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">2. Target ACV (Annual Contract Value)</label>
                                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                         <button type="button" data-cat="acv" data-val="low" onclick="setQuiz('acv', 'low')" class="quiz-btn-acv p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
                                             <div class="font-bold">&lt; $25k</div>
@@ -432,9 +419,7 @@
 
                                 <!-- Parameter 3 -->
                                 <div class="space-y-3">
-                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">
-                                        3. Primary Sales Motion
-                                    </label>
+                                    <label class="block text-xs font-bold uppercase tracking-widest text-navy-900">3. Primary Sales Motion</label>
                                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                         <button type="button" data-cat="motion" data-val="plg" onclick="setQuiz('motion', 'plg')" class="quiz-btn-motion p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all">
                                             <div class="font-bold">PLG</div>
@@ -504,7 +489,6 @@
                                 </div>
 
                                 <h3 class="text-base font-bold text-white mb-2 text-center" id="quiz-status">Optimal Hybrid Expansion Motion</h3>
-
                                 <div class="space-y-3 pt-3 text-xs text-cream-200 leading-relaxed" id="quiz-recs"></div>
                             </div>
 
@@ -517,17 +501,14 @@
                                 </button>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- Media, Keynotes & Speaking -->
         <section id="media" class="py-24 bg-white border-b border-navy-900/5">
             <div class="max-w-7xl mx-auto px-6 sm:px-12">
-
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                     <div>
                         <p class="text-xs uppercase tracking-widest text-gold-dark font-semibold mb-2">Keynotes &amp; Appearances</p>
@@ -538,8 +519,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Video 1: LinkedIn Talent Connect -->
                     <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
                         <div class="space-y-4">
@@ -554,6 +534,7 @@
                                 Exclusive Talent Connect interview exploring workforce dynamics, employer branding, and organizational culture strategies for high-performing teams.
                             </p>
 
+                            <!-- Optional Inline Video Container -->
                             <div id="video-embed-container" class="hidden pt-2">
                                 <div class="relative w-full overflow-hidden rounded-xl bg-navy-900 aspect-video shadow-inner">
                                     <iframe id="youtube-iframe" class="w-full h-full" src="" title="Tabitha Bertron - LinkedIn Talent Connect Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -574,7 +555,29 @@
                         </div>
                     </article>
 
-                    <!-- Video 2: Google Partner Academy -->
+                    <!-- Event 2: Google Ads OnAir Academy (August 2025) -->
+                    <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between text-xs text-navy-600">
+                                <span class="font-bold text-gold-dark uppercase tracking-wider">Hosted Broadcast · 2025</span>
+                                <span class="px-2.5 py-1 rounded-full bg-cream-100 font-medium">Google Ads OnAir</span>
+                            </div>
+                            <h3 class="heading-serif text-2xl font-bold text-navy-900">
+                                Google Ads Academy: Peak Retail 2025 (AUNZ)
+                            </h3>
+                            <p class="text-sm text-charcoal/85 leading-relaxed">
+                                Hosted the August 2025 Google Ads Academy broadcast for Australia &amp; New Zealand, guiding retail leaders and marketers through AI-powered peak season growth strategies.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-navy-900/5 flex flex-wrap items-center justify-between gap-3 text-xs">
+                            <a href="https://adsonair.withgoogle.com/events/google-ads-academy-aunz-august-2025" target="_blank" rel="noopener noreferrer" class="text-navy-900 font-semibold hover:text-gold-dark transition-colors flex items-center gap-1.5">
+                                <span>View on Google Ads OnAir ↗</span>
+                            </a>
+                            <span class="text-navy-600 font-medium">August 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Video 3: Google Partner Academy -->
                     <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between text-xs text-navy-600">
@@ -595,7 +598,6 @@
                             <span class="text-navy-600 font-medium">Sydney &amp; Melbourne, AU</span>
                         </div>
                     </article>
-
                 </div>
             </div>
         </section>
@@ -603,10 +605,8 @@
         <!-- Paying It Forward & Mentorship Section -->
         <section id="pay-it-forward" class="py-24 bg-cream-50">
             <div class="max-w-7xl mx-auto px-6 sm:px-12">
-
                 <div class="luxury-card rounded-3xl p-8 sm:p-14 border border-gold/30 bg-white">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-
                         <div class="lg:col-span-8 space-y-6">
                             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 text-gold-dark text-xs font-semibold tracking-wider uppercase">
                                 <span class="w-2 h-2 rounded-full bg-gold"></span>
@@ -635,9 +635,28 @@
                             </div>
                         </div>
 
-                        <div class="lg:col-span-4 bg-navy-800 text-cream-50 p-8 rounded-2xl space-y-4 border border-gold-subtle">
-                            <h3 class="heading-serif text-2xl font-bold text-white">Focus Areas for 30-Min Calls</h3>
-                            <ul class="space-y-3.5 text-xs text-cream-200 leading-relaxed">
+                        <div class="lg:col-span-4 bg-navy-800 text-cream-50 p-8 rounded-2xl space-y-5 border border-gold-subtle">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-widest text-gold block mb-1">Weekly Office Hours</span>
+                                <h3 class="heading-serif text-2xl font-bold text-white">Dedicated 30-Min Slots</h3>
+                            </div>
+                            <div class="space-y-2.5 text-xs">
+                                <div class="p-3 rounded-xl bg-navy-900/60 border border-cream-50/10 flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-white">Tuesdays</div>
+                                        <div class="text-cream-300">2 slots available weekly</div>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-md bg-gold/20 text-gold font-semibold">10:30 – 11:30 AM PT</span>
+                                </div>
+                                <div class="p-3 rounded-xl bg-navy-900/60 border border-cream-50/10 flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-white">Fridays</div>
+                                        <div class="text-cream-300">2 slots available weekly</div>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-md bg-gold/20 text-gold font-semibold">11:00 AM – 12:00 PM PT</span>
+                                </div>
+                            </div>
+                            <ul class="space-y-2.5 pt-2 border-t border-cream-50/10 text-xs text-cream-200 leading-relaxed">
                                 <li class="flex items-start gap-2.5">
                                     <span class="text-gold font-bold">✓</span>
                                     <span><strong class="text-white">Startup GTM &amp; Cloud Scale:</strong> Early sales architecture, cloud credits, and co-sell positioning.</span>
@@ -652,10 +671,8 @@
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -669,10 +686,10 @@
                     </div>
                     <div class="md:col-span-8 text-base text-charcoal/85 leading-relaxed font-light space-y-4">
                         <p>
-                            Based in the San Francisco Bay Area, I balance my work in tech leadership with family life as a mother of two daughters. Outside of work, you’ll find us exploring local biking trails along Shoreline Lake or hiking in the Stanford hills.
+                            Based in the San Francisco Bay Area, I balance my work in tech leadership with family life as a proud mother of two daughters. Outside of work, you’ll usually find me cheering on my girls from the sidelines at their sports games, out on local bike rides together, or hiking the trails in the Stanford hills.
                         </p>
                         <p>
-                            Having lived and worked across Sydney, Australia, and the Bay Area, I bring a global perspective to leadership, mentorship, and building authentic connections across diverse teams.
+                            Having lived and worked across Sydney, Australia, New York City, and the Bay Area, I bring a global perspective to leadership, mentorship, and building authentic connections across diverse teams.
                         </p>
                     </div>
                 </div>
@@ -693,7 +710,7 @@
                         LinkedIn Profile
                     </a>
                     <button type="button" onclick="openMentorshipModal()" class="px-6 py-3 rounded-full border border-cream-50/20 text-cream-50 text-xs font-bold uppercase tracking-wider hover:border-gold hover:text-gold transition-colors">
-                        Mentorship Call
+                        Request 30-Min Session
                     </button>
                 </div>
             </div>
@@ -711,20 +728,47 @@
         </div>
     </footer>
 
-    <!-- Mentorship & Advisory Modal -->
+    <!-- Mentorship & Advisory Request Modal (Private — No Email or Calendar Exposed) -->
     <div id="mentorship-modal" class="fixed inset-0 z-50 bg-navy-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="handleModalBackdropClick(event)">
         <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl border border-navy-900/10 space-y-6 max-h-[90vh] overflow-y-auto">
             <button type="button" onclick="closeMentorshipModal()" class="absolute top-6 right-6 w-8 h-8 rounded-full bg-cream-100 text-navy-600 hover:text-navy-900 flex items-center justify-center text-lg font-bold" aria-label="Close Modal">&times;</button>
 
             <div>
-                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark">Paying It Forward</span>
-                <h3 id="modal-title" class="heading-serif text-3xl font-bold text-navy-900 mt-1">Book 30-Min Session</h3>
-                <p class="text-xs text-charcoal/80 mt-2">Open sessions at no cost for startup founders, career guidance, or ecosystem networking.</p>
+                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark">Paying It Forward · Weekly Office Hours</span>
+                <h3 id="modal-title" class="heading-serif text-3xl font-bold text-navy-900 mt-1">Request a 30-Min Session</h3>
+                <p class="text-xs text-charcoal/80 mt-1.5">Select one of the weekly 30-minute windows below to submit a session request. Once reviewed, a calendar invitation will be sent to your email.</p>
             </div>
 
             <form id="mentorship-form" onsubmit="handleMentorshipSubmit(event)" class="space-y-4">
                 <div>
-                    <label for="mentor-topic" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">Session Topic / Track</label>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-2">1. Select Preferred Weekly Slot (Pacific Time)</label>
+                    <input type="hidden" id="selected-slot-input" value="Tuesday · 10:30 AM – 11:00 AM PT" required>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="slot-buttons-container">
+                        <button type="button" data-slot="Tuesday · 10:30 AM – 11:00 AM PT" onclick="selectTimeSlot(this)" class="slot-btn p-3 rounded-xl border border-gold bg-navy-800 text-white text-left transition-all">
+                            <div class="text-xs font-bold">Tuesday · Slot 1</div>
+                            <div class="text-xs text-cream-200 mt-0.5">10:30 AM – 11:00 AM PT</div>
+                            <div class="text-xs text-gold mt-1 font-medium next-tue-label"></div>
+                        </button>
+                        <button type="button" data-slot="Tuesday · 11:00 AM – 11:30 AM PT" onclick="selectTimeSlot(this)" class="slot-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all">
+                            <div class="text-xs font-bold">Tuesday · Slot 2</div>
+                            <div class="text-xs text-navy-600 mt-0.5">11:00 AM – 11:30 AM PT</div>
+                            <div class="text-xs text-gold-dark mt-1 font-medium next-tue-label"></div>
+                        </button>
+                        <button type="button" data-slot="Friday · 11:00 AM – 11:30 AM PT" onclick="selectTimeSlot(this)" class="slot-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all">
+                            <div class="text-xs font-bold">Friday · Slot 1</div>
+                            <div class="text-xs text-navy-600 mt-0.5">11:00 AM – 11:30 AM PT</div>
+                            <div class="text-xs text-gold-dark mt-1 font-medium next-fri-label"></div>
+                        </button>
+                        <button type="button" data-slot="Friday · 11:30 AM – 12:00 PM PT" onclick="selectTimeSlot(this)" class="slot-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all">
+                            <div class="text-xs font-bold">Friday · Slot 2</div>
+                            <div class="text-xs text-navy-600 mt-0.5">11:30 AM – 12:00 PM PT</div>
+                            <div class="text-xs text-gold-dark mt-1 font-medium next-fri-label"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="mentor-topic" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">2. Session Topic / Track</label>
                     <select id="mentor-topic" required class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-xs text-navy-900 bg-white focus:outline-none focus:border-gold">
                         <option value="Startup GTM & Cloud Scale Strategy">Startup GTM &amp; Cloud Scale Strategy</option>
                         <option value="Career Mentorship & Sales Leadership">Career Mentorship &amp; Sales Leadership</option>
@@ -733,91 +777,107 @@
                         <option value="General Coaching / Paying It Forward">General Coaching / Paying It Forward</option>
                     </select>
                 </div>
-                <div>
-                    <label for="mentor-name" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">Full Name</label>
-                    <input id="mentor-name" type="text" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold">
-                </div>
-                <div>
-                    <label for="mentor-email" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">Email Address</label>
-                    <input id="mentor-email" type="email" required placeholder="sarah@company.com" class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold">
-                </div>
-                <div>
-                    <label for="mentor-notes" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">What would you like to cover?</label>
-                    <textarea id="mentor-notes" rows="3" required placeholder="Brief note on your background and key topics for our 30-minute chat..." class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold"></textarea>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label for="mentor-name" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">Full Name</label>
+                        <input id="mentor-name" type="text" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold">
+                    </div>
+                    <div>
+                        <label for="mentor-email" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">Your Email Address</label>
+                        <input id="mentor-email" type="email" required placeholder="sarah@company.com" class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold">
+                    </div>
                 </div>
 
-                <button type="submit" class="w-full py-4 rounded-xl bg-navy-800 text-cream-50 font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-navy-900 transition-colors">
-                    Prepare Mentorship Request
+                <div>
+                    <label for="mentor-linkedin" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">LinkedIn Profile or Company Website (Optional)</label>
+                    <input id="mentor-linkedin" type="text" placeholder="e.g. linkedin.com/in/sarahjenkins" class="w-full px-4 py-2.5 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold">
+                </div>
+
+                <div>
+                    <label for="mentor-notes" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">What would you like to cover?</label>
+                    <textarea id="mentor-notes" rows="3" required placeholder="Brief note on your background and key questions for our 30-minute session..." class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold"></textarea>
+                </div>
+
+                <button id="submit-request-btn" type="submit" class="w-full py-4 rounded-xl bg-navy-800 text-cream-50 font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-navy-900 transition-colors shadow-md">
+                    Submit 30-Min Session Request
                 </button>
             </form>
 
-            <!-- Actionable Confirmation View -->
-            <div id="modal-success" class="hidden space-y-5 py-2">
-                <div class="text-center space-y-2">
-                    <div class="w-12 h-12 rounded-full bg-gold/20 text-gold-dark flex items-center justify-center mx-auto text-xl font-bold">✓</div>
-                    <h4 class="heading-serif font-bold text-navy-900 text-2xl">Your Request Is Ready</h4>
-                    <p class="text-xs text-charcoal/80">Choose your preferred way to connect directly with Tabitha below:</p>
+            <!-- Private Confirmation View -->
+            <div id="modal-success" class="hidden space-y-5 py-4 text-center">
+                <div class="w-14 h-14 rounded-full bg-gold/20 text-gold-dark flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
+                <div class="space-y-2">
+                    <h4 class="heading-serif font-bold text-navy-900 text-3xl">Session Request Submitted</h4>
+                    <p class="text-xs text-charcoal/85 max-w-sm mx-auto leading-relaxed">
+                        Thank you for reaching out! Your request has been received and we will follow up with a calendar invitation to confirm your 30-minute session.
+                    </p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-cream-100 border border-navy-900/10 text-xs text-navy-800 space-y-1">
-                    <div class="font-bold text-gold-dark uppercase tracking-wider">Formatted Session Note (Copied to Clipboard)</div>
-                    <p id="formatted-request-preview" class="text-charcoal whitespace-pre-line pt-1 font-normal"></p>
+                <div class="p-4 rounded-xl bg-cream-100 border border-navy-900/10 text-xs text-navy-800 text-left space-y-1">
+                    <div class="font-bold text-gold-dark uppercase tracking-wider">Request Summary</div>
+                    <p id="formatted-request-preview" class="text-charcoal whitespace-pre-line pt-1 font-normal leading-relaxed"></p>
                 </div>
 
-                <div class="space-y-2.5">
-                    <a id="SendCalendarBtn" href="#" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 px-4 rounded-xl bg-navy-800 text-cream-50 font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-navy-900 transition-colors text-center">
-                        1. Book via Google Calendar (bertron@google.com) ↗
-                    </a>
-                    <a id="SendMailtoBtn" href="#" class="block w-full py-3.5 px-4 rounded-xl bg-gold text-navy-900 font-bold text-xs uppercase tracking-widest hover:bg-gold-light transition-colors text-center">
-                        2. Send Request via Email (bertron@google.com)
-                    </a>
-                    <a href="https://www.linkedin.com/in/tabithabertron/" target="_blank" rel="noopener noreferrer" class="block w-full py-3 px-4 rounded-xl border border-navy-900/15 text-navy-800 font-semibold text-xs uppercase tracking-widest hover:border-gold hover:text-gold-dark transition-colors text-center">
-                        3. Connect &amp; Message on LinkedIn ↗
-                    </a>
-                    <button type="button" onclick="resetMentorshipModal()" class="block w-full py-2 text-xs text-navy-600 hover:text-navy-900 font-medium text-center">
-                        ← Edit Request Details
+                <div class="pt-2">
+                    <button type="button" onclick="closeMentorshipModal()" class="w-full py-3.5 px-6 rounded-xl bg-navy-800 text-cream-50 font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-navy-900 transition-colors">
+                        Done
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- JavaScript Logic -->
     <script>
-        const SITE_CONFIG = {
-            contactEmail: "bertron@google.com",
-            calendarBookingUrl: ""
-        };
+        const _ep = atob("aHR0cHM6Ly9mb3Jtc3VibWl0LmNvL2FqYXgvYmVydHJvbkBnb29nbGUuY29t");
 
-        const quizState = {
-            stage: 'seriesA',
-            acv: 'mid',
-            motion: 'hybrid'
-        };
+        function getNextDayOfWeek(dayIndex) {
+            const now = new Date();
+            const result = new Date(now);
+            const currentDay = now.getDay();
+            let daysAhead = (dayIndex - currentDay + 7) % 7;
+            if (daysAhead === 0) daysAhead = 7;
+            result.setDate(now.getDate() + daysAhead);
+            return result.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
 
-        const stageLabels = {
-            seed: 'Seed / Pre-Seed',
-            seriesA: 'Series A',
-            seriesB: 'Series B+'
-        };
+        function populateUpcomingSlotDates() {
+            const nextTue = getNextDayOfWeek(2);
+            const nextFri = getNextDayOfWeek(5);
+            document.querySelectorAll('.next-tue-label').forEach(el => { el.textContent = `Next: Tue, ${nextTue}`; });
+            document.querySelectorAll('.next-fri-label').forEach(el => { el.textContent = `Next: Fri, ${nextFri}`; });
+        }
 
-        const acvLabels = {
-            low: '<$25k ACV',
-            mid: '$25k-$100k ACV',
-            high: '$100k+ ACV'
-        };
+        function selectTimeSlot(selectedBtn) {
+            const slotValue = selectedBtn.getAttribute('data-slot');
+            const dateBadge = selectedBtn.querySelector('div:last-child').textContent;
+            document.getElementById('selected-slot-input').value = `${slotValue} (${dateBadge})`;
 
-        const motionLabels = {
-            plg: 'PLG',
-            hybrid: 'Hybrid',
-            topdown: 'Top-Down'
-        };
+            document.querySelectorAll('.slot-btn').forEach(btn => {
+                const sub = btn.querySelectorAll('div')[1];
+                const dateLine = btn.querySelectorAll('div')[2];
+                if (btn === selectedBtn) {
+                    btn.className = 'slot-btn p-3 rounded-xl border border-gold bg-navy-800 text-white text-left transition-all shadow-sm';
+                    if (sub) sub.className = 'text-xs text-cream-200 mt-0.5';
+                    if (dateLine) dateLine.className = 'text-xs text-gold mt-1 font-medium';
+                } else {
+                    btn.className = 'slot-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all';
+                    if (sub) sub.className = 'text-xs text-navy-600 mt-0.5';
+                    if (dateLine) dateLine.className = 'text-xs text-gold-dark mt-1 font-medium';
+                }
+            });
+        }
 
+        const quizState = { stage: 'seriesA', acv: 'mid', motion: 'hybrid' };
+        const stageLabels = { seed: 'Seed / Pre-Seed', seriesA: 'Series A', seriesB: 'Series B+' };
+        const acvLabels = { low: '<$25k ACV', mid: '$25k-$100k ACV', high: '$100k+ ACV' };
+        const motionLabels = { plg: 'PLG', hybrid: 'Hybrid', topdown: 'Top-Down' };
         const quizScores = {
             stage: { seed: 74, seriesA: 83, seriesB: 89 },
             acv: { low: 2, mid: 5, high: 7 },
             motion: { plg: 2, hybrid: 5, topdown: 4 }
         };
-
         const subMetrics = {
             stage: {
                 seed: { cosell: 78, velocity: 92, se: 74 },
@@ -830,7 +890,6 @@
                 topdown: { cosell: 4, velocity: -4, se: 5 }
             }
         };
-
         const quizRecsMap = {
             seed: "Prioritize fast PMF iteration using Google Cloud Startup credits, AI model garden access, and lightweight API endpoints.",
             seriesA: "Establish repeatable Solutions Engineering and cloud marketplace co-sell positioning to accelerate Series A pipeline.",
@@ -845,48 +904,33 @@
 
         function setQuiz(category, value) {
             quizState[category] = value;
-
-            const btns = document.querySelectorAll(`.quiz-btn-${category}`);
-            btns.forEach(btn => {
+            document.querySelectorAll(`.quiz-btn-${category}`).forEach(btn => {
+                const sub = btn.querySelector('div:last-child');
                 if (btn.getAttribute('data-val') === value) {
                     btn.className = `quiz-btn-${category} p-3.5 rounded-xl border border-gold bg-navy-800 text-white text-xs font-medium text-left shadow-sm transition-all`;
-                    const sub = btn.querySelector('div:last-child');
                     if (sub) sub.className = 'text-xs text-cream-200 mt-0.5';
                 } else {
                     btn.className = `quiz-btn-${category} p-3.5 rounded-xl border border-navy-900/10 text-xs font-medium text-left bg-cream-50 text-navy-800 hover:border-gold transition-all`;
-                    const sub = btn.querySelector('div:last-child');
                     if (sub) sub.className = 'text-xs text-navy-600 mt-0.5';
                 }
             });
-
             calculateQuiz();
         }
 
         function getCurrentScore() {
-            const base = quizScores.stage[quizState.stage];
-            const acvMod = quizScores.acv[quizState.acv];
-            const motionMod = quizScores.motion[quizState.motion];
-            return Math.min(Math.max(base + acvMod + motionMod, 65), 98);
+            return Math.min(Math.max(quizScores.stage[quizState.stage] + quizScores.acv[quizState.acv] + quizScores.motion[quizState.motion], 65), 98);
         }
 
         function calculateQuiz() {
             const finalScore = getCurrentScore();
-
-            const ring = document.getElementById('quiz-ring');
-            const offset = 314.15 - (314.15 * finalScore / 100);
-            ring.style.strokeDashoffset = offset;
-
+            document.getElementById('quiz-ring').style.strokeDashoffset = 314.15 - (314.15 * finalScore / 100);
             document.getElementById('quiz-score').textContent = finalScore;
             document.getElementById('quiz-badge').textContent = `${stageLabels[quizState.stage]} · ${motionLabels[quizState.motion]}`;
 
             const statusEl = document.getElementById('quiz-status');
-            if (finalScore >= 90) {
-                statusEl.textContent = "Optimal Enterprise & Cloud Co-Sell Architecture";
-            } else if (finalScore >= 82) {
-                statusEl.textContent = "High-Growth Scale & Hybrid Velocity Motion";
-            } else {
-                statusEl.textContent = "Foundational Product-Market Fit & Traction Phase";
-            }
+            statusEl.textContent = finalScore >= 90 ? "Optimal Enterprise & Cloud Co-Sell Architecture" :
+                                   finalScore >= 82 ? "High-Growth Scale & Hybrid Velocity Motion" :
+                                                      "Foundational Product-Market Fit & Traction Phase";
 
             const baseSub = subMetrics.stage[quizState.stage];
             const modSub = subMetrics.motion[quizState.motion];
@@ -901,49 +945,31 @@
             document.getElementById('metric-se').textContent = `${seVal}%`;
             document.getElementById('bar-se').style.width = `${seVal}%`;
 
-            const container = document.getElementById('quiz-recs');
-            container.innerHTML = `
-                <div class="flex items-start gap-2.5">
-                    <span class="text-gold font-bold">1.</span>
-                    <span>${quizRecsMap[quizState.stage]}</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                    <span class="text-gold font-bold">2.</span>
-                    <span>${quizRecsMap[quizState.acv]}</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                    <span class="text-gold font-bold">3.</span>
-                    <span>${quizRecsMap[quizState.motion]}</span>
-                </div>
+            document.getElementById('quiz-recs').innerHTML = `
+                <div class="flex items-start gap-2.5"><span class="text-gold font-bold">1.</span><span>${quizRecsMap[quizState.stage]}</span></div>
+                <div class="flex items-start gap-2.5"><span class="text-gold font-bold">2.</span><span>${quizRecsMap[quizState.acv]}</span></div>
+                <div class="flex items-start gap-2.5"><span class="text-gold font-bold">3.</span><span>${quizRecsMap[quizState.motion]}</span></div>
             `;
         }
 
         function getPlaybookSummaryText() {
             const score = getCurrentScore();
-            return `GTM Diagnostic Profile: ${stageLabels[quizState.stage]} | ${acvLabels[quizState.acv]} | ${motionLabels[quizState.motion]} Motion (Readiness Score: ${score}/100)\n` +
-                   `• ${quizRecsMap[quizState.stage]}\n` +
-                   `• ${quizRecsMap[quizState.acv]}\n` +
-                   `• ${quizRecsMap[quizState.motion]}`;
+            return `GTM Diagnostic Profile: ${stageLabels[quizState.stage]} | ${acvLabels[quizState.acv]} | ${motionLabels[quizState.motion]} Motion (Readiness Score: ${score}/100)\n• ${quizRecsMap[quizState.stage]}\n• ${quizRecsMap[quizState.acv]}\n• ${quizRecsMap[quizState.motion]}`;
         }
 
         function copyQuizPlaybook() {
-            const summary = getPlaybookSummaryText();
             const btn = document.getElementById('copy-playbook-btn');
             if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(summary);
+                navigator.clipboard.writeText(getPlaybookSummaryText());
             }
             btn.textContent = "✓ Copied Playbook to Clipboard!";
-            setTimeout(() => {
-                btn.textContent = "Copy Diagnostic Playbook Summary";
-            }, 2500);
+            setTimeout(() => { btn.textContent = "Copy Diagnostic Playbook Summary"; }, 2500);
         }
 
         function openMentorshipWithQuiz() {
             const score = getCurrentScore();
-            const notesField = document.getElementById('mentor-notes');
-            const topicSelect = document.getElementById('mentor-topic');
-            topicSelect.value = "Startup GTM & Cloud Scale Strategy";
-            notesField.value = `GTM Simulator Profile: ${stageLabels[quizState.stage]}, ${acvLabels[quizState.acv]}, ${motionLabels[quizState.motion]} Motion (GTM Score: ${score}/100).\n\nKey questions for our 30-min session: `;
+            document.getElementById('mentor-topic').value = "Startup GTM & Cloud Scale Strategy";
+            document.getElementById('mentor-notes').value = `GTM Simulator Profile: ${stageLabels[quizState.stage]}, ${acvLabels[quizState.acv]}, ${motionLabels[quizState.motion]} Motion (GTM Score: ${score}/100).\n\nKey questions for our 30-min session: `;
             openMentorshipModal();
         }
 
@@ -951,7 +977,6 @@
             const container = document.getElementById('video-embed-container');
             const iframe = document.getElementById('youtube-iframe');
             const btn = document.getElementById('video-toggle-btn');
-
             if (container.classList.contains('hidden')) {
                 iframe.src = "https://www.youtube.com/embed/4mo_bAp-J5Y?rel=0";
                 container.classList.remove('hidden');
@@ -964,16 +989,10 @@
         }
 
         function openMentorshipModal(presetTopic) {
-            if (SITE_CONFIG.calendarBookingUrl) {
-                window.open(SITE_CONFIG.calendarBookingUrl, '_blank', 'noopener');
-                return;
-            }
             const topicSelect = document.getElementById('mentor-topic');
-            if (presetTopic === 'hbs') {
-                topicSelect.value = "HBS Alumni & Ecosystem Connection";
-            } else if (presetTopic === 'speaking') {
-                topicSelect.value = "Speaking / Keynote / Panel Inquiry";
-            }
+            if (presetTopic === 'hbs') topicSelect.value = "HBS Alumni & Ecosystem Connection";
+            else if (presetTopic === 'speaking') topicSelect.value = "Speaking / Keynote / Panel Inquiry";
+            resetMentorshipModal();
             document.getElementById('mentorship-modal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
@@ -984,41 +1003,53 @@
         }
 
         function handleModalBackdropClick(e) {
-            if (e.target.id === 'mentorship-modal') {
-                closeMentorshipModal();
-            }
+            if (e.target.id === 'mentorship-modal') closeMentorshipModal();
         }
 
         function resetMentorshipModal() {
             document.getElementById('mentorship-form').classList.remove('hidden');
             document.getElementById('modal-success').classList.add('hidden');
+            const submitBtn = document.getElementById('submit-request-btn');
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Submit 30-Min Session Request";
+            }
         }
 
-        function handleMentorshipSubmit(e) {
+        async function handleMentorshipSubmit(e) {
             e.preventDefault();
+            const submitBtn = document.getElementById('submit-request-btn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Submitting Request...";
+
+            const slot = document.getElementById('selected-slot-input').value;
             const topic = document.getElementById('mentor-topic').value;
             const name = document.getElementById('mentor-name').value.trim();
             const email = document.getElementById('mentor-email').value.trim();
+            const linkedin = document.getElementById('mentor-linkedin').value.trim() || "Not provided";
             const notes = document.getElementById('mentor-notes').value.trim();
 
-            const subject = `30-Min Session: ${name} <> Tabitha Bertron (${topic})`;
-            const bodyText = `Hi Tabitha,\n\nI'd love to book a 30-minute session via tabithabertron.com.\n\n• Name: ${name}\n• Email: ${email}\n• Track: ${topic}\n• Topics to Cover:\n${notes}\n\nBest regards,\n${name}`;
+            document.getElementById('formatted-request-preview').textContent = `• Preferred Slot: ${slot}\n• Track: ${topic}\n• Name: ${name} (${email})\n• Topics: ${notes}`;
 
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(bodyText).catch(() => {});
-            }
-
-            document.getElementById('formatted-request-preview').textContent = bodyText;
-
-            const calUrl = SITE_CONFIG.calendarBookingUrl ||
-                `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(subject)}&add=${encodeURIComponent(SITE_CONFIG.contactEmail)}&details=${encodeURIComponent(bodyText)}`;
-            document.getElementById('SendCalendarBtn').href = calUrl;
-
-            const mailtoUrl = `mailto:${SITE_CONFIG.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
-            document.getElementById('SendMailtoBtn').href = mailtoUrl;
+            try {
+                await fetch(_ep, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                    body: JSON.stringify({
+                        _subject: `New 30-Min Session Request: ${name} (${slot})`,
+                        Preferred_Time_Slot: slot,
+                        Session_Track: topic,
+                        Requester_Name: name,
+                        Requester_Email: email,
+                        LinkedIn_Or_Website: linkedin,
+                        Topics_To_Cover: notes
+                    })
+                });
+            } catch (err) {}
 
             document.getElementById('mentorship-form').classList.add('hidden');
             document.getElementById('modal-success').classList.remove('hidden');
+            e.target.reset();
         }
 
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -1048,6 +1079,9 @@
         });
 
         document.getElementById('year').textContent = new Date().getFullYear();
+        populateUpcomingSlotDates();
+        const firstSlotBtn = document.querySelector('.slot-btn');
+        if (firstSlotBtn) selectTimeSlot(firstSlotBtn);
         calculateQuiz();
     </script>
 </body>
