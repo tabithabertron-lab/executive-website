@@ -74,16 +74,14 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
 </style>
 </head>
 <body class="selection:bg-gold/20 selection:text-navy-900">
-<!-- Header Navigation -->
+
 <header id="site-header" class="fixed top-0 left-0 w-full z-40 bg-[#F8FAF9]/92 backdrop-blur-md border-b border-navy-900/5 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
-    <a href="#vision" class="group flex items-center gap-3.5 text-left focus:outline-none">
-      <img id="nav-portrait" src="" alt="Tabitha Bertron" class="w-10 h-10 rounded-full object-cover object-top border border-gold/60 shadow-sm shrink-0 bg-navy-800">
-      <div>
-        <span class="heading-serif text-2xl font-bold tracking-tight text-navy-800 block group-hover:text-gold-dark transition-colors leading-none">TABITHA BERTRON</span>
-        <span class="text-xs tracking-[0.16em] uppercase text-navy-600 block mt-1">Google Cloud · Startups GTM · HBS Alumni</span>
-      </div>
+    <a href="#vision" class="group text-left focus:outline-none">
+      <span class="heading-serif text-2xl font-bold tracking-tight text-navy-800 block group-hover:text-gold-dark transition-colors">TABITHA BERTRON</span>
+      <span class="text-xs tracking-[0.16em] uppercase text-navy-600 block">Google Cloud · Startups GTM · HBS Alumni</span>
     </a>
+
     <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide text-navy-700" aria-label="Main Navigation">
       <a href="#vision" class="hover:text-gold-dark transition-colors py-2">Vision</a>
       <a href="#experience" class="hover:text-gold-dark transition-colors py-2">Leadership</a>
@@ -97,6 +95,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
         Book 30-Min Session
       </button>
     </nav>
+
     <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 rounded-lg text-navy-800 hover:bg-navy-900/5 focus:outline-none" aria-label="Toggle Navigation" aria-expanded="false">
       <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -106,7 +105,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
       </svg>
     </button>
   </div>
-  <!-- Mobile Navigation Drawer -->
+
   <div id="mobile-menu" class="hidden lg:hidden bg-cream-50 border-b border-navy-900/10 px-6 py-6 space-y-4 shadow-lg">
     <a href="#vision" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Vision</a>
     <a href="#experience" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Leadership</a>
@@ -120,6 +119,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
     </div>
   </div>
 </header>
+
 <main>
   <!-- Hero Section -->
   <section id="vision" class="hero-radial pt-32 pb-20 lg:pt-44 lg:pb-28 px-6 sm:px-12">
@@ -134,12 +134,15 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
             HBS Alumni
           </span>
         </div>
+
         <h1 class="heading-serif text-4xl sm:text-6xl lg:text-[4.25rem] font-bold text-navy-900 leading-[1.08] tracking-tight">
           Scaling High-Growth <span class="gold-accent-text italic font-normal">AI Startups</span> &amp; Enterprise Go-To-Market.
         </h1>
+
         <p class="text-base sm:text-lg text-charcoal/90 leading-relaxed font-light max-w-2xl">
           Leading startup GTM execution across the Silicon Valley ecosystem. I partner with founders, venture capital funds, and technical teams to scale high-potential AI ventures from early traction to global cloud footprint.
         </p>
+
         <div class="pt-2 flex flex-wrap items-center gap-4">
           <a href="#diagnostic" class="px-8 py-4 rounded-full bg-navy-800 text-cream-50 font-semibold text-xs tracking-widest uppercase hover:bg-gold hover:text-navy-900 transition-all duration-300 shadow-md">
             Take GTM Pressure Test
@@ -148,6 +151,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
             Connect / 30-Min Mentorship
           </button>
         </div>
+
         <div class="pt-10 border-t border-navy-900/10 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <a href="#experience" class="group block">
             <div class="heading-serif text-2xl sm:text-3xl font-bold text-navy-900 group-hover:text-gold-dark transition-colors">Google Cloud</div>
@@ -163,23 +167,21 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
           </a>
         </div>
       </div>
-      <!-- Profile Summary Card -->
+
       <div class="lg:col-span-5">
         <div class="relative mx-auto max-w-md lg:max-w-none">
           <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-gold/25 to-navy-900/10 blur-xl opacity-60 pointer-events-none"></div>
           <div class="relative rounded-2xl bg-white p-8 border border-navy-900/10 shadow-xl space-y-6">
-            <div class="flex items-center gap-5 pb-6 border-b border-navy-900/10">
-              <div class="relative shrink-0">
-                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-gold/40 to-navy-900/15 blur-sm opacity-80 pointer-events-none"></div>
-                <img id="hero-portrait" src="data:image/jpeg;base64,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" alt="Tabitha Bertron — Head of Sales GTM, Startups at Google Cloud" class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover object-top border-2 border-gold/60 shadow-md bg-navy-800">
-                <span class="absolute -bottom-1.5 -right-1.5 w-6 h-6 rounded-full bg-navy-900 text-gold border border-gold/60 flex items-center justify-center heading-serif text-xs font-bold shadow-sm">TB</span>
-              </div>
+            <div class="flex items-center justify-between pb-6 border-b border-navy-900/10">
               <div>
-                <h2 class="heading-serif text-2xl sm:text-3xl font-bold text-navy-900 leading-tight">Tabitha Bertron</h2>
-                <p class="text-xs text-gold-dark uppercase tracking-widest font-semibold mt-1">Silicon Valley Executive &amp; Advisor</p>
-                <p class="text-xs text-navy-600 mt-1 font-medium">Google Cloud Startups · HBS Alumni</p>
+                <h2 class="heading-serif text-2xl font-bold text-navy-900">Tabitha Bertron</h2>
+                <p class="text-xs text-gold-dark uppercase tracking-widest font-semibold mt-0.5">Silicon Valley Executive &amp; Advisor</p>
+              </div>
+              <div class="w-12 h-12 rounded-full bg-navy-800 text-gold border border-gold/40 flex items-center justify-center heading-serif text-xl font-bold shrink-0">
+                TB
               </div>
             </div>
+
             <div class="space-y-4 text-sm text-charcoal">
               <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-gold-dark shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -194,6 +196,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
                 <span><strong class="text-navy-900">Google Ads ANZ:</strong> Led mid-market sales, customer growth, and digital ad strategy across Australia and New Zealand.</span>
               </div>
             </div>
+
             <div class="pt-4 border-t border-navy-900/5 space-y-4">
               <blockquote class="p-4 rounded-xl bg-cream-100 border border-navy-900/5 text-xs text-navy-700 italic leading-relaxed">
                 "Effective GTM isn't just about selling a product—it's about building repeatable value, technical alignment, and trust with founders."
@@ -211,6 +214,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
       </div>
     </div>
   </section>
+
   <!-- Leadership Journey -->
   <section id="experience" class="py-24 bg-white border-y border-navy-900/5">
     <div class="max-w-7xl mx-auto px-6 sm:px-12">
@@ -223,8 +227,8 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
           Silicon Valley · North America · Australia &amp; NZ
         </div>
       </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Google Cloud -->
         <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center justify-between">
@@ -247,7 +251,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
             <span class="text-gold-dark">01</span>
           </div>
         </article>
-        <!-- LinkedIn -->
+
         <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center justify-between">
@@ -270,7 +274,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
             <span class="text-gold-dark">02</span>
           </div>
         </article>
-        <!-- Google Ads ANZ -->
+
         <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center justify-between">
@@ -294,7 +298,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
           </div>
         </article>
       </div>
-      <!-- Executive Education Banner -->
+
       <div class="mt-10 rounded-2xl bg-cream-100 border border-navy-900/10 p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div class="space-y-1">
           <div class="text-xs font-bold uppercase tracking-widest text-gold-dark">Executive Education &amp; Network</div>
@@ -309,6 +313,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
       </div>
     </div>
   </section>
+
   <!-- The Founder's GTM Pressure Test -->
   <section id="diagnostic" class="py-24 bg-cream-50">
     <div class="max-w-7xl mx-auto px-6 sm:px-12">
@@ -319,9 +324,9 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
           Skip the generic readiness calculators. Step into three real-world scaling dilemmas I see AI founders navigate every week—make your call, see <strong class="font-semibold text-navy-900">Tabitha’s Take</strong> on what top-decile teams do, and unlock your GTM Leadership Archetype.
         </p>
       </div>
+
       <div class="luxury-card rounded-3xl p-6 sm:p-10 max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
-          <!-- Left Column: Interactive Case Dilemma Board -->
           <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
             <div class="space-y-6">
               <div class="grid grid-cols-3 gap-2.5" id="case-tabs">
@@ -347,6 +352,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
                   <div class="text-xs font-semibold mt-0.5 truncate">Procurement Freeze</div>
                 </button>
               </div>
+
               <div class="p-6 rounded-2xl bg-cream-100 border border-navy-900/10 space-y-3">
                 <div class="flex flex-wrap items-center justify-between gap-2">
                   <span id="case-context-tag" class="text-xs font-bold uppercase tracking-widest text-gold-dark">Seed → Series A · $600k ARR · 5 Engineers</span>
@@ -359,11 +365,13 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
                   Your AI startup has $600k ARR across 25 fast-moving mid-market teams. Suddenly, a Fortune 500 bank offers $250k for a pilot—but only if you build custom on-prem connectors and pass a 4-month security review. Your 5 engineers are already maxed out. What’s your call?
                 </p>
               </div>
+
               <div class="space-y-3" id="case-options-container"></div>
+
               <div id="tabitha-take-box" class="hidden p-6 rounded-2xl bg-navy-800 text-cream-50 border border-gold space-y-3 shadow-lg">
                 <div class="flex items-center justify-between gap-2">
-                  <div class="flex items-center gap-2.5">
-                    <img id="take-portrait" src="" alt="Tabitha Bertron" class="w-7 h-7 rounded-full object-cover object-top border border-gold shrink-0 bg-navy-900">
+                  <div class="flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-full bg-gold text-navy-900 heading-serif font-bold text-xs flex items-center justify-center">TB</span>
                     <span class="text-xs font-bold uppercase tracking-widest text-gold">Tabitha’s Take</span>
                   </div>
                   <span id="take-verdict-badge" class="text-xs px-2.5 py-1 rounded-full font-semibold"></span>
@@ -377,6 +385,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
                 </div>
               </div>
             </div>
+
             <div class="pt-4 border-t border-navy-900/10 grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div class="p-3 rounded-xl bg-cream-100 border border-navy-900/5">
                 <div class="flex justify-between text-xs font-semibold text-navy-800 mb-1">
@@ -407,7 +416,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
               </div>
             </div>
           </div>
-          <!-- Right Column: Live Decision Profile & Executive Archetype -->
+
           <div class="lg:col-span-5 bg-navy-800 text-cream-50 p-8 rounded-2xl space-y-6 flex flex-col justify-between border border-gold-subtle">
             <div class="space-y-6">
               <div class="flex items-center justify-between border-b border-cream-50/10 pb-4">
@@ -417,6 +426,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
                 </div>
                 <span id="quiz-badge" class="text-xs bg-gold/20 text-gold px-3 py-1 rounded-full font-semibold">0 of 3 Decided</span>
               </div>
+
               <div class="p-5 rounded-2xl bg-navy-900/70 border border-gold/30 space-y-2 text-center">
                 <div class="text-xs uppercase tracking-widest text-gold font-semibold" id="archetype-kicker">Make Your First Call</div>
                 <div class="heading-serif text-2xl sm:text-3xl font-bold text-white" id="quiz-status">Awaiting Your Decisions...</div>
@@ -424,11 +434,13 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
                   Select your move on each of the three founder dilemmas to reveal how your GTM instincts compare against top-performing Silicon Valley AI startups.
                 </p>
               </div>
+
               <div class="space-y-3">
                 <div class="text-xs font-bold uppercase tracking-widest text-cream-300">Your Case Decisions</div>
                 <div class="space-y-2.5 text-xs" id="quiz-recs"></div>
               </div>
             </div>
+
             <div class="space-y-2.5 pt-4 border-t border-cream-50/10">
               <button type="button" onclick="openMentorshipWithQuiz()" class="w-full py-3.5 px-4 rounded-xl bg-gold text-navy-900 font-bold text-xs uppercase tracking-widest hover:bg-gold-light transition-colors text-center shadow-md">
                 Debate My Decisions in a 30-Min Session
@@ -447,6 +459,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
       </div>
     </div>
   </section>
+
   <!-- Media, Keynotes & Speaking -->
   <section id="media" class="py-24 bg-white border-b border-navy-900/5">
     <div class="max-w-7xl mx-auto px-6 sm:px-12">
@@ -459,8 +472,8 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
           Featured sessions and keynotes across global tech conferences, talent leadership forums, and Google growth events.
         </div>
       </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Video 1: LinkedIn Talent Connect -->
         <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center justify-between text-xs text-navy-600">
@@ -492,7 +505,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
             <span class="text-navy-600 font-medium">LinkedIn Media</span>
           </div>
         </article>
-        <!-- Event 2: Google Ads OnAir Academy (August 2025) -->
+
         <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center justify-between text-xs text-navy-600">
@@ -513,7 +526,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
             <span class="text-navy-600 font-medium">August 2025</span>
           </div>
         </article>
-        <!-- Video 3: Google Partner Academy -->
+
         <article class="luxury-card p-8 rounded-2xl flex flex-col justify-between">
           <div class="space-y-4">
             <div class="flex items-center justify-between text-xs text-navy-600">
@@ -537,6 +550,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
       </div>
     </div>
   </section>
+
   <!-- Paying It Forward & Mentorship Section -->
   <section id="pay-it-forward" class="py-24 bg-cream-50">
     <div class="max-w-7xl mx-auto px-6 sm:px-12">
@@ -547,15 +561,19 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
               <span class="w-2 h-2 rounded-full bg-gold"></span>
               Mentorship &amp; Community Philosophy
             </div>
+
             <h2 class="heading-serif text-3xl sm:text-5xl font-bold text-navy-900">
               Paying It Forward: Open 30-Minute Sessions
             </h2>
+
             <p class="text-base text-charcoal/90 leading-relaxed font-light">
               Throughout my journey across Google Ads in Australia, leading Solutions Consulting at LinkedIn, and driving Cloud Startup GTM in Silicon Valley, I’ve benefited immensely from incredible mentors and leaders who generously shared their time and advice.
             </p>
+
             <p class="text-base text-charcoal/90 leading-relaxed font-light">
               I am committed to paying that forward. I regularly hold open <strong class="font-semibold text-navy-900">30-minute sessions at no cost</strong> for founders navigating GTM strategy, professionals planning career transitions, or fellow alumni looking to connect.
             </p>
+
             <div class="pt-2 flex flex-wrap items-center gap-4">
               <button type="button" onclick="openMentorshipModal()" class="px-8 py-4 rounded-full bg-navy-800 text-cream-50 font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-navy-900 transition-colors shadow-md">
                 Request 30-Min Mentorship Session
@@ -565,6 +583,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
               </a>
             </div>
           </div>
+
           <div class="lg:col-span-4 bg-navy-800 text-cream-50 p-8 rounded-2xl space-y-5 border border-gold-subtle">
             <div>
               <span class="text-xs font-bold uppercase tracking-widest text-gold block mb-1">30-Minute Sessions</span>
@@ -601,6 +620,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
       </div>
     </div>
   </section>
+
   <!-- Beyond The Resume -->
   <section class="py-20 bg-white border-t border-navy-900/5">
     <div class="max-w-7xl mx-auto px-6 sm:px-12">
@@ -621,6 +641,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
     </div>
   </section>
 </main>
+
 <!-- Footer Section -->
 <footer id="contact" class="py-16 bg-navy-800 text-cream-50">
   <div class="max-w-7xl mx-auto px-6 sm:px-12 space-y-12">
@@ -638,6 +659,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
         </button>
       </div>
     </div>
+
     <div class="space-y-4">
       <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-cream-300 gap-4">
         <div>© <span id="year"></span> Tabitha Bertron (tabithabertron.com). All rights reserved.</div>
@@ -655,15 +677,18 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
     </div>
   </div>
 </footer>
+
 <!-- Mentorship & Advisory Request Modal (Private — No Email or Calendar Exposed) -->
 <div id="mentorship-modal" class="fixed inset-0 z-50 bg-navy-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="handleModalBackdropClick(event)">
   <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl border border-navy-900/10 space-y-6 max-h-[90vh] overflow-y-auto">
     <button type="button" onclick="closeMentorshipModal()" class="absolute top-6 right-6 w-8 h-8 rounded-full bg-cream-100 text-navy-600 hover:text-navy-900 flex items-center justify-center text-lg font-bold" aria-label="Close Modal">&times;</button>
+
     <div>
       <span class="text-xs font-bold uppercase tracking-widest text-gold-dark">Paying It Forward · 30-Min Session</span>
       <h3 id="modal-title" class="heading-serif text-3xl font-bold text-navy-900 mt-1">Request a 30-Min Session</h3>
       <p class="text-xs text-charcoal/80 mt-1.5">Choose a focus area and share a brief note below. I will review your request and reply directly with times that work.</p>
     </div>
+
     <form id="mentorship-form" onsubmit="handleMentorshipSubmit(event)" class="space-y-4">
       <div>
         <label class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-2">Select a Focus Area</label>
@@ -683,6 +708,7 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
           </button>
         </div>
       </div>
+
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
           <label for="mentor-name" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">Full Name</label>
@@ -693,18 +719,22 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
           <input id="mentor-email" type="email" required placeholder="sarah@company.com" class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold">
         </div>
       </div>
+
       <div>
         <label for="mentor-linkedin" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">LinkedIn Profile or Company Website (Optional)</label>
         <input id="mentor-linkedin" type="text" placeholder="e.g. linkedin.com/in/sarahjenkins" class="w-full px-4 py-2.5 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold">
       </div>
+
       <div>
         <label for="mentor-notes" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">What would you like to cover?</label>
         <textarea id="mentor-notes" rows="3" required placeholder="Brief note on your background and key questions for our 30-minute session..." class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-sm focus:outline-none focus:border-gold"></textarea>
       </div>
+
       <button id="submit-request-btn" type="submit" class="w-full py-4 rounded-xl bg-navy-800 text-cream-50 font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-navy-900 transition-colors shadow-md">
         Submit 30-Min Session Request
       </button>
     </form>
+
     <div id="modal-success" class="hidden space-y-5 py-4 text-center">
       <div class="w-14 h-14 rounded-full bg-gold/20 text-gold-dark flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
       <div class="space-y-2">
@@ -725,8 +755,10 @@ body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta San
     </div>
   </div>
 </div>
+
 <script>
 const _ep = atob("aHR0cHM6Ly9mb3Jtc3VibWl0LmNvL2FqYXgvYmVydHJvbkBnb29nbGUuY29t");
+
 function selectSessionTopic(selectedBtn) {
   const topicValue = selectedBtn.getAttribute('data-topic');
   document.getElementById('mentor-topic').value = topicValue;
@@ -741,6 +773,7 @@ function selectSessionTopic(selectedBtn) {
     }
   });
 }
+
 const gtmCases = [
   {
     id: 0,
@@ -863,8 +896,10 @@ const gtmCases = [
     ]
   }
 ];
+
 let activeCaseIndex = 0;
 const userChoices = [null, null, null];
+
 function loadCase(index) {
   activeCaseIndex = index;
   const c = gtmCases[index];
@@ -887,12 +922,15 @@ function loadCase(index) {
       check.className = i === index ? "text-xs font-bold text-cream-300" : "text-xs font-bold text-navy-600";
     }
   }
+
   document.getElementById('case-context-tag').textContent = c.context;
   document.getElementById('case-number-badge').textContent = c.badge;
   document.getElementById('case-title').textContent = c.title;
   document.getElementById('case-scenario').textContent = c.scenario;
+
   const optionsContainer = document.getElementById('case-options-container');
   const selectedOption = userChoices[index];
+
   optionsContainer.innerHTML = c.options.map((opt, optIdx) => {
     const isSelected = selectedOption && selectedOption.key === opt.key;
     const baseCls = isSelected
@@ -903,4 +941,296 @@ function loadCase(index) {
     const badgeCls = isSelected
       ? (opt.isOptimal ? "bg-gold text-navy-900" : "bg-navy-800 text-white")
       : "bg-cream-100 text-navy-800";
-    const subCls = isSelected && opt.isOptimal ? "text-cream-200" : "text-charcoal/
+    const subCls = isSelected && opt.isOptimal ? "text-cream-200" : "text-charcoal/80";
+
+    return `
+      <button type="button" onclick="chooseCaseOption(${index}, ${optIdx})" class="${baseCls}">
+        <div class="flex items-start gap-3.5">
+          <span class="w-7 h-7 rounded-lg ${badgeCls} font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">${opt.key}</span>
+          <div class="space-y-1">
+            <div class="text-sm font-bold">${opt.label}</div>
+            <div class="text-xs ${subCls} leading-relaxed">${opt.sub}</div>
+          </div>
+        </div>
+      </button>
+    `;
+  }).join('');
+
+  const takeBox = document.getElementById('tabitha-take-box');
+  if (selectedOption) {
+    takeBox.classList.remove('hidden');
+    const verdictBadge = document.getElementById('take-verdict-badge');
+    verdictBadge.textContent = selectedOption.verdict;
+    verdictBadge.className = selectedOption.isOptimal
+      ? "text-xs px-2.5 py-1 rounded-full font-semibold bg-gold text-navy-900"
+      : "text-xs px-2.5 py-1 rounded-full font-semibold bg-cream-50/15 text-gold-light";
+    document.getElementById('take-explanation').textContent = selectedOption.take;
+    document.getElementById('take-stat').textContent = selectedOption.stat;
+
+    const nextBtn = document.getElementById('next-case-btn');
+    if (index < 2) {
+      nextBtn.textContent = `Next: Case 0${index + 2} →`;
+      nextBtn.classList.remove('hidden');
+    } else {
+      const unanswered = userChoices.findIndex(ch => ch === null);
+      if (unanswered !== -1) {
+        nextBtn.textContent = `Complete Case 0${unanswered + 1} →`;
+        nextBtn.classList.remove('hidden');
+      } else {
+        nextBtn.classList.add('hidden');
+      }
+    }
+  } else {
+    takeBox.classList.add('hidden');
+  }
+
+  updateDecisionBoard();
+}
+
+function chooseCaseOption(caseIdx, optIdx) {
+  userChoices[caseIdx] = gtmCases[caseIdx].options[optIdx];
+  loadCase(caseIdx);
+}
+
+function advanceCase() {
+  if (activeCaseIndex < 2) {
+    loadCase(activeCaseIndex + 1);
+  } else {
+    const unanswered = userChoices.findIndex(ch => ch === null);
+    if (unanswered !== -1) loadCase(unanswered);
+  }
+}
+
+function resetPressureTest() {
+  userChoices[0] = null;
+  userChoices[1] = null;
+  userChoices[2] = null;
+  loadCase(0);
+}
+
+function updateDecisionBoard() {
+  const answered = userChoices.filter(Boolean);
+  const count = answered.length;
+  document.getElementById('quiz-badge').textContent = `${count} of 3 Decided`;
+
+  if (count === 0) {
+    document.getElementById('metric-cosell').textContent = "--";
+    document.getElementById('bar-cosell').style.width = "30%";
+    document.getElementById('metric-velocity').textContent = "--";
+    document.getElementById('bar-velocity').style.width = "30%";
+    document.getElementById('metric-se').textContent = "--";
+    document.getElementById('bar-se').style.width = "30%";
+  } else {
+    const avgDisc = Math.round(answered.reduce((s, c) => s + c.scores.discipline, 0) / count);
+    const avgPre = Math.round(answered.reduce((s, c) => s + c.scores.presales, 0) / count);
+    const avgCosell = Math.round(answered.reduce((s, c) => s + c.scores.cosell, 0) / count);
+
+    document.getElementById('metric-cosell').textContent = `${avgDisc}%`;
+    document.getElementById('bar-cosell').style.width = `${avgDisc}%`;
+    document.getElementById('metric-velocity').textContent = `${avgPre}%`;
+    document.getElementById('bar-velocity').style.width = `${avgPre}%`;
+    document.getElementById('metric-se').textContent = `${avgCosell}%`;
+    document.getElementById('bar-se').style.width = `${avgCosell}%`;
+  }
+
+  const kickerEl = document.getElementById('archetype-kicker');
+  const statusEl = document.getElementById('quiz-status');
+  const descEl = document.getElementById('archetype-desc');
+  const optimalCount = answered.filter(c => c.isOptimal).length;
+
+  if (count === 0) {
+    kickerEl.textContent = "Interactive Case Study";
+    statusEl.textContent = "Make Your First Call";
+    descEl.textContent = "Click Option A, B, or C on the left to test your instincts against real Silicon Valley startup scaling scenarios.";
+  } else if (count < 3) {
+    kickerEl.textContent = `In Progress · ${3 - count} Dilemma${3 - count > 1 ? 's' : ''} Remaining`;
+    statusEl.textContent = optimalCount === count ? "Sharp Strategic Instincts So Far" : "Pragmatic Operator Profile Forming";
+    descEl.textContent = `You've locked in ${count} of 3 decisions. Complete the remaining case${3 - count > 1 ? 's' : ''} to unlock your full GTM Leadership Archetype.`;
+  } else {
+    if (optimalCount === 3) {
+      kickerEl.textContent = "Unlocked Archetype · 3/3 Top-Decile Plays";
+      statusEl.textContent = "The Cloud-Native Scale Architect";
+      descEl.textContent = "You think like a seasoned Silicon Valley GTM leader: protecting core product velocity with scoped cloud VPC pilots, pairing founding Solutions Engineers with builder AEs, and using Cloud Marketplace commits to crush enterprise procurement cycles.";
+    } else if (optimalCount === 2) {
+      kickerEl.textContent = "Unlocked Archetype · 2/3 Top-Decile Plays";
+      statusEl.textContent = "The High-Velocity Technical Builder";
+      descEl.textContent = "Strong commercial instincts with a bias for action. Tightening how you leverage technical presales (SEs) or hyperscaler co-sell commits will help you close 6-figure enterprise deals without burning out your engineering team.";
+    } else {
+      kickerEl.textContent = "Unlocked Archetype · Growth Stage Hustler";
+      statusEl.textContent = "The Relentless Revenue Chaser";
+      descEl.textContent = "You aren't afraid to swing big for logos and top-of-funnel volume—but watch out for custom dev-shop traps, premature executive hires, and heavy discounting when scaling from Seed to Series B.";
+    }
+  }
+
+  const recsEl = document.getElementById('quiz-recs');
+  recsEl.innerHTML = gtmCases.map((c, idx) => {
+    const ch = userChoices[idx];
+    if (!ch) {
+      return `
+        <button type="button" onclick="loadCase(${idx})" class="w-full p-3 rounded-xl bg-navy-900/40 border border-cream-50/10 flex items-center justify-between text-left hover:border-gold/50 transition-colors">
+          <span class="text-cream-300">Case 0${idx + 1}: ${c.shortTitle}</span>
+          <span class="text-gold text-xs font-semibold">Decide →</span>
+        </button>
+      `;
+    }
+    return `
+      <button type="button" onclick="loadCase(${idx})" class="w-full p-3 rounded-xl bg-navy-900/80 border ${ch.isOptimal ? 'border-gold/50' : 'border-cream-50/15'} text-left space-y-1 hover:border-gold transition-colors">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-white">Case 0${idx + 1}: Option ${ch.key} — ${ch.label}</span>
+          <span class="text-xs ${ch.isOptimal ? 'text-gold' : 'text-cream-300'} font-semibold">${ch.isOptimal ? '★ Optimal' : 'Reviewed'}</span>
+        </div>
+        <div class="text-cream-300 text-xs truncate">${ch.verdict}</div>
+      </button>
+    `;
+  }).join('');
+}
+
+function getPlaybookSummaryText() {
+  const status = document.getElementById('quiz-status').textContent;
+  const lines = gtmCases.map((c, i) => {
+    const ch = userChoices[i];
+    return ch ? `• Case 0${i + 1} (${c.shortTitle}): Chose [${ch.key}] ${ch.label} — ${ch.verdict}` : `• Case 0${i + 1} (${c.shortTitle}): Not yet decided`;
+  });
+  return `Founder's GTM Pressure Test — Archetype: ${status}\n` + lines.join('\n');
+}
+
+function copyQuizPlaybook() {
+  const summary = getPlaybookSummaryText();
+  const btn = document.getElementById('copy-playbook-btn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(summary);
+  }
+  btn.textContent = "✓ Copied Summary!";
+  setTimeout(() => {
+    btn.textContent = "Copy Case Summary";
+  }, 2500);
+}
+
+function openMentorshipWithQuiz() {
+  const notesField = document.getElementById('mentor-notes');
+  notesField.value = `${getPlaybookSummaryText()}\n\nWhat I'd love to jam on during our 30-min session: `;
+  openMentorshipModal('startup');
+}
+
+function toggleInlineVideo() {
+  const container = document.getElementById('video-embed-container');
+  const iframe = document.getElementById('youtube-iframe');
+  const btn = document.getElementById('video-toggle-btn');
+
+  if (container.classList.contains('hidden')) {
+    iframe.src = "https://www.youtube.com/embed/4mo_bAp-J5Y?rel=0";
+    container.classList.remove('hidden');
+    btn.textContent = "Hide Video Preview";
+  } else {
+    iframe.src = "";
+    container.classList.add('hidden');
+    btn.textContent = "Preview Inline";
+  }
+}
+
+function openMentorshipModal(presetTopic) {
+  const buttons = document.querySelectorAll('.topic-btn');
+  if (presetTopic === 'hbs' && buttons[2]) {
+    selectSessionTopic(buttons[2]);
+  } else if (presetTopic === 'career' && buttons[1]) {
+    selectSessionTopic(buttons[1]);
+  } else if (buttons[0]) {
+    selectSessionTopic(buttons[0]);
+  }
+  resetMentorshipModal();
+  document.getElementById('mentorship-modal').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMentorshipModal() {
+  document.getElementById('mentorship-modal').classList.add('hidden');
+  document.body.style.overflow = '';
+}
+
+function handleModalBackdropClick(e) {
+  if (e.target.id === 'mentorship-modal') {
+    closeMentorshipModal();
+  }
+}
+
+function resetMentorshipModal() {
+  document.getElementById('mentorship-form').classList.remove('hidden');
+  document.getElementById('modal-success').classList.add('hidden');
+  const submitBtn = document.getElementById('submit-request-btn');
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit 30-Min Session Request";
+  }
+}
+
+async function handleMentorshipSubmit(e) {
+  e.preventDefault();
+  const submitBtn = document.getElementById('submit-request-btn');
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Submitting Request...";
+
+  const topic = document.getElementById('mentor-topic').value;
+  const name = document.getElementById('mentor-name').value.trim();
+  const email = document.getElementById('mentor-email').value.trim();
+  const linkedin = document.getElementById('mentor-linkedin').value.trim() || "Not provided";
+  const notes = document.getElementById('mentor-notes').value.trim();
+
+  const summaryText = `• Focus Area: ${topic}\n• Name: ${name} (${email})\n• Note: ${notes}`;
+  document.getElementById('formatted-request-preview').textContent = summaryText;
+
+  try {
+    await fetch(_ep, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({
+        _subject: `New 30-Min Session Request: ${name} (${topic})`,
+        Focus_Area: topic,
+        Requester_Name: name,
+        Requester_Email: email,
+        LinkedIn_Or_Website: linkedin,
+        Topics_To_Cover: notes
+      })
+    });
+  } catch (err) {
+    // Silent fallback
+  }
+
+  document.getElementById('mentorship-form').classList.add('hidden');
+  document.getElementById('modal-success').classList.remove('hidden');
+  e.target.reset();
+}
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const iconOpen = document.getElementById('menu-icon-open');
+const iconClose = document.getElementById('menu-icon-close');
+
+function closeMobileMenu() {
+  mobileMenu.classList.add('hidden');
+  iconOpen.classList.remove('hidden');
+  iconClose.classList.add('hidden');
+  mobileMenuBtn.setAttribute('aria-expanded', 'false');
+}
+
+mobileMenuBtn.addEventListener('click', () => {
+  const isHidden = mobileMenu.classList.toggle('hidden');
+  iconOpen.classList.toggle('hidden', !isHidden);
+  iconClose.classList.toggle('hidden', isHidden);
+  mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeMentorshipModal();
+    closeMobileMenu();
+  }
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+loadCase(0);
+</script>
+</body>
+</html>
