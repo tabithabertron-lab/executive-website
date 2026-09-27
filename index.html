@@ -1,478 +1,212 @@
-Viewed index.html:700-920
-Viewed index.html:1310-1445
-Viewed index.html:1260-1320
-Viewed index.html:915-975
-Ran command: `python3 -c '
-import html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabitha Bertron | Head of Sales GTM, Startups at Google Cloud · HBS Alumni</title>
+<meta name="description" content="Tabitha Bertron leads Startup Sales Go-To-Market (GTM) at Google Cloud in Silicon Valley. Partnering with AI founders, venture capital funds, and technical teams to scale from early traction to global cloud footprint.">
+<meta name="author" content="Tabitha Bertron">
+<link rel="canonical" href="https://tabithabertron.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tabithabertron.com/">
+<meta property="og:title" content="Tabitha Bertron | Head of Sales GTM, Startups · Google Cloud">
+<meta property="og:description" content="Scaling High-Growth AI Startups & Enterprise Go-To-Market in Silicon Valley. Google Cloud Startups GTM Leader, former LinkedIn Solutions Consulting Leader, Google Ads ANZ Executive & HBS Alumni.">
+<meta property="og:site_name" content="Tabitha Bertron">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tabitha Bertron | Head of Sales GTM, Startups · Google Cloud">
+<meta name="twitter:description" content="Scaling High-Growth AI Startups & Enterprise Go-To-Market in Silicon Valley.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230F172A'/%3E%3Crect x='3' y='3' width='58' height='58' rx='13' fill='none' stroke='%23C5A059' stroke-width='1.5' stroke-opacity='0.6'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-weight='bold' font-size='26' fill='%23C5A059' letter-spacing='1'%3ETB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: { 900: '#0B132B', 800: '#0F172A', 700: '#1E293B', 600: '#334155' },
+        cream: { 50: '#FCFCF9', 100: '#F8FAF9', 200: '#F3F4F1', 300: '#E8ECE6' },
+        gold: { DEFAULT: '#C5A059', light: '#DFBF7A', dark: '#A37F3C', muted: '#E6D7B8' },
+        charcoal: '#334155'
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background-color: #F8FAF9; color: #334155; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+.heading-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.border-gold-subtle { border-color: rgba(197, 160, 89, 0.28); }
+.gold-accent-text { color: #A37F3C; }
+.luxury-card { background: #ffffff; border: 1px solid rgba(15, 23, 42, 0.07); box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); }
+.luxury-card:hover { border-color: rgba(197, 160, 89, 0.45); box-shadow: 0 22px 44px -14px rgba(15, 23, 42, 0.09); transform: translateY(-3px); }
+.bar-fill { transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+.hero-radial { background-image: radial-gradient(circle at 85% 20%, rgba(197, 160, 89, 0.10) 0%, transparent 55%), radial-gradient(circle at 10% 80%, rgba(15, 23, 42, 0.04) 0%, transparent 50%); }
+.bg-navy-900 { background-color: #0B132B; }
+.bg-navy-800 { background-color: #0F172A; }
+.bg-cream-50 { background-color: #FCFCF9; }
+.bg-cream-100 { background-color: #F8FAF9; }
+.bg-gold { background-color: #C5A059; }
+.bg-gold-dark { background-color: #A37F3C; }
+.text-navy-900 { color: #0B132B; }
+.text-navy-800 { color: #0F172A; }
+.text-navy-700 { color: #1E293B; }
+.text-navy-600 { color: #334155; }
+.text-cream-50 { color: #FCFCF9; }
+.text-cream-200 { color: #F3F4F1; }
+.text-cream-300 { color: #E8ECE6; }
+.text-gold { color: #C5A059; }
+.text-gold-dark { color: #A37F3C; }
+.text-charcoal { color: #334155; }
+.border-gold { border-color: #C5A059; }
+.hover\:bg-gold:hover { background-color: #C5A059; }
+.hover\:bg-gold-light:hover { background-color: #DFBF7A; }
+.hover\:text-navy-900:hover { color: #0B132B; }
+.hover\:text-gold:hover { color: #C5A059; }
+.hover\:text-gold-dark:hover { color: #A37F3C; }
+.hover\:border-gold:hover { border-color: #C5A059; }
+</style>
+</head>
+<body class="selection:bg-gold/20 selection:text-navy-900">
 
-idx_path = "/google/data/rw/personal-agents/be/bertron/corpagent-eng-bertron/.gemini/jetski/scratch/tabithabertron-site/index.html"
-content = open(idx_path, "r", encoding="utf-8").read()
+<!-- Header Navigation -->
+<header id="site-header" class="fixed top-0 left-0 w-full z-40 bg-[#F8FAF9]/92 backdrop-blur-md border-b border-navy-900/5 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
+    <a href="#vision" class="group flex items-center gap-3.5 text-left focus:outline-none">
+      <img id="nav-portrait" src="" alt="Tabitha Bertron" class="w-10 h-10 rounded-full object-cover object-top border border-gold/60 shadow-sm shrink-0 bg-navy-800">
+      <div>
+        <span class="heading-serif text-2xl font-bold tracking-tight text-navy-800 block group-hover:text-gold-dark transition-colors leading-none">TABITHA BERTRON</span>
+        <span class="text-xs tracking-[0.16em] uppercase text-navy-600 block mt-1">Google Cloud · Startups GTM · HBS Alumni</span>
+      </div>
+    </a>
 
-# 1. Update the right-hand card in #pay-it-forward (remove Tuesday/Friday times, show the 3 ideas: Startup Soundboard, Career Navigation, HBS & Alumni Connection)
-old_pif_card = """                        <div class="lg:col-span-4 bg-navy-800 text-cream-50 p-8 rounded-2xl space-y-5 border border-gold-subtle">
-                            <div>
-                                <span class="text-xs font-bold uppercase tracking-widest text-gold block mb-1">Weekly Office Hours</span>
-                                <h3 class="heading-serif text-2xl font-bold text-white">Dedicated 30-Min Slots</h3>
-                            </div>
-                            <div class="space-y-2.5 text-xs">
-                                <div class="p-3 rounded-xl bg-navy-900/60 border border-cream-50/10 flex items-center justify-between">
-                                    <div>
-                                        <div class="font-bold text-white">Tuesdays</div>
-                                        <div class="text-cream-300">2 slots available weekly</div>
-                                    </div>
-                                    <span class="px-2.5 py-1 rounded-md bg-gold/20 text-gold font-semibold">10:30 – 11:30 AM PT</span>
-                                </div>
-                                <div class="p-3 rounded-xl bg-navy-900/60 border border-cream-50/10 flex items-center justify-between">
-                                    <div>
-                                        <div class="font-bold text-white">Fridays</div>
-                                        <div class="text-cream-300">2 slots available weekly</div>
-                                    </div>
-                                    <span class="px-2.5 py-1 rounded-md bg-gold/20 text-gold font-semibold">11:00 AM – 12:00 PM PT</span>
-                                </div>
-                            </div>
-                            <ul class="space-y-2.5 pt-2 border-t border-cream-50/10 text-xs text-cream-200 leading-relaxed">
-                                <li class="flex items-start gap-2.5">
-                                    <span class="text-gold font-bold">✓</span>
-                                    <span><strong class="text-white">Startup GTM &amp; Cloud Scale:</strong> Early sales architecture, cloud credits, and co-sell positioning.</span>
-                                </li>
-                                <li class="flex items-start gap-2.5">
-                                    <span class="text-gold font-bold">✓</span>
-                                    <span><strong class="text-white">Executive Leadership Growth:</strong> Scaling high-performing GTM teams and navigating global leadership careers.</span>
-                                </li>
-                                <li class="flex items-start gap-2.5">
-                                    <span class="text-gold font-bold">✓</span>
-                                    <span><strong class="text-white">HBS &amp; Alumni Connection:</strong> Case study decision-making and executive network growth.</span>
-                                </li>
-                            </ul>
-                        </div>"""
+    <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium tracking-wide text-navy-700" aria-label="Main Navigation">
+      <a href="#vision" class="hover:text-gold-dark transition-colors py-2">Vision</a>
+      <a href="#experience" class="hover:text-gold-dark transition-colors py-2">Leadership</a>
+      <a href="#diagnostic" class="hover:text-gold-dark transition-colors py-2 flex items-center gap-1.5">
+        <span>GTM Pressure Test</span>
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gold"></span>
+      </a>
+      <a href="#media" class="hover:text-gold-dark transition-colors py-2">Media</a>
+      <a href="#pay-it-forward" class="hover:text-gold-dark transition-colors py-2">Paying It Forward</a>
+      <button type="button" onclick="openMentorshipModal()" class="px-5 py-2.5 rounded-full bg-navy-800 text-cream-50 hover:bg-gold hover:text-navy-900 transition-all text-xs tracking-wider uppercase font-semibold shadow-sm">
+        Book 30-Min Session
+      </button>
+    </nav>
 
-new_pif_card = """                        <div class="lg:col-span-4 bg-navy-800 text-cream-50 p-8 rounded-2xl space-y-5 border border-gold-subtle">
-                            <div>
-                                <span class="text-xs font-bold uppercase tracking-widest text-gold block mb-1">30-Minute Sessions</span>
-                                <h3 class="heading-serif text-2xl font-bold text-white">Ways We Can Connect</h3>
-                            </div>
-                            <div class="space-y-3 text-xs">
-                                <button type="button" onclick="openMentorshipModal(\x27startup\x27)" class="w-full p-3.5 rounded-xl bg-navy-900/60 border border-cream-50/10 hover:border-gold/60 text-left transition-all group">
-                                    <div class="flex items-center justify-between">
-                                        <span class="font-bold text-white group-hover:text-gold transition-colors">1. Startup Soundboard</span>
-                                        <span class="text-gold">→</span>
-                                    </div>
-                                    <p class="text-cream-300 mt-1 leading-relaxed">Early-stage GTM strategy, cloud scale architecture, and enterprise co-sell positioning.</p>
-                                </button>
-                                <button type="button" onclick="openMentorshipModal(\x27career\x27)" class="w-full p-3.5 rounded-xl bg-navy-900/60 border border-cream-50/10 hover:border-gold/60 text-left transition-all group">
-                                    <div class="flex items-center justify-between">
-                                        <span class="font-bold text-white group-hover:text-gold transition-colors">2. Career Navigation</span>
-                                        <span class="text-gold">→</span>
-                                    </div>
-                                    <p class="text-cream-300 mt-1 leading-relaxed">Scaling high-performing GTM teams, leadership transitions, and global career growth.</p>
-                                </button>
-                                <button type="button" onclick="openMentorshipModal(\x27hbs\x27)" class="w-full p-3.5 rounded-xl bg-navy-900/60 border border-cream-50/10 hover:border-gold/60 text-left transition-all group">
-                                    <div class="flex items-center justify-between">
-                                        <span class="font-bold text-white group-hover:text-gold transition-colors">3. HBS &amp; Alumni Connection</span>
-                                        <span class="text-gold">→</span>
-                                    </div>
-                                    <p class="text-cream-300 mt-1 leading-relaxed">Case-method sparring, fellow alumni networking, and executive community connection.</p>
-                                </button>
-                            </div>
-                            <p class="text-xs text-cream-300/80 pt-2 border-t border-cream-50/10 leading-relaxed">
-                                Submit a quick note and I will reply directly with times that work for our 30-minute conversation.
-                            </p>
-                        </div>"""
+    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 rounded-lg text-navy-800 hover:bg-navy-900/5 focus:outline-none" aria-label="Toggle Navigation" aria-expanded="false">
+      <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
 
-assert old_pif_card in content, "old_pif_card not found"
-content = content.replace(old_pif_card, new_pif_card, 1)
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-cream-50 border-b border-navy-900/10 px-6 py-6 space-y-4 shadow-lg">
+    <a href="#vision" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Vision</a>
+    <a href="#experience" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Leadership</a>
+    <a href="#diagnostic" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">GTM Pressure Test</a>
+    <a href="#media" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Media &amp; Keynotes</a>
+    <a href="#pay-it-forward" onclick="closeMobileMenu()" class="block text-navy-800 hover:text-gold-dark text-base font-medium py-1">Paying It Forward</a>
+    <div class="pt-2">
+      <button type="button" onclick="closeMobileMenu(); openMentorshipModal();" class="w-full py-3 rounded-full bg-navy-800 text-cream-50 text-xs tracking-wider uppercase font-semibold">
+        Book 30-Min Session
+      </button>
+    </div>
+  </div>
+</header>
 
-# 2. Update the Mentorship Modal HTML (remove time slots, use 3 clean topic cards + simple form)
-old_modal = """            <div>
-                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark">Paying It Forward · Weekly Office Hours</span>
-                <h3 id="modal-title" class="heading-serif text-3xl font-bold text-navy-900 mt-1">Request a 30-Min Session</h3>
-                <p class="text-xs text-charcoal/80 mt-1.5">Select one of the weekly 30-minute windows below to submit a session request. Once reviewed, a calendar invitation will be sent to your email.</p>
+<main>
+  <!-- Hero Section -->
+  <section id="vision" class="hero-radial pt-32 pb-20 lg:pt-44 lg:pb-28 px-6 sm:px-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-7 space-y-8">
+        <div class="flex flex-wrap items-center gap-2.5">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-900/5 border border-navy-900/10 text-navy-800 text-xs font-semibold tracking-wider uppercase">
+            <span class="w-2 h-2 rounded-full bg-gold"></span>
+            Head of Sales GTM, Startups · Google Cloud
+          </span>
+          <span class="px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-navy-900 text-xs font-semibold tracking-wider uppercase">
+            HBS Alumni
+          </span>
+        </div>
+
+        <h1 class="heading-serif text-4xl sm:text-6xl lg:text-[4.25rem] font-bold text-navy-900 leading-[1.08] tracking-tight">
+          Scaling High-Growth <span class="gold-accent-text italic font-normal">AI Startups</span> &amp; Enterprise Go-To-Market.
+        </h1>
+
+        <p class="text-base sm:text-lg text-charcoal/90 leading-relaxed font-light max-w-2xl">
+          Leading startup GTM execution across the Silicon Valley ecosystem. I partner with founders, venture capital funds, and technical teams to scale high-potential AI ventures from early traction to global cloud footprint.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a href="#diagnostic" class="px-8 py-4 rounded-full bg-navy-800 text-cream-50 font-semibold text-xs tracking-widest uppercase hover:bg-gold hover:text-navy-900 transition-all duration-300 shadow-md">
+            Take GTM Pressure Test
+          </a>
+          <button type="button" onclick="openMentorshipModal()" class="px-8 py-4 rounded-full border border-navy-800/25 bg-white/70 text-navy-800 font-semibold text-xs tracking-widest uppercase hover:border-gold hover:text-gold-dark transition-all">
+            Connect / 30-Min Mentorship
+          </button>
+        </div>
+
+        <div class="pt-10 border-t border-navy-900/10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <a href="#experience" class="group block">
+            <div class="heading-serif text-2xl sm:text-3xl font-bold text-navy-900 group-hover:text-gold-dark transition-colors">Google Cloud</div>
+            <div class="text-xs uppercase tracking-wider text-navy-600 mt-1">Startups &amp; AI GTM · Bay Area</div>
+          </a>
+          <a href="#experience" class="group block">
+            <div class="heading-serif text-2xl sm:text-3xl font-bold text-navy-900 group-hover:text-gold-dark transition-colors">LinkedIn</div>
+            <div class="text-xs uppercase tracking-wider text-navy-600 mt-1">Solutions Consulting NAMER</div>
+          </a>
+          <a href="#experience" class="group block">
+            <div class="heading-serif text-2xl sm:text-3xl font-bold text-navy-900 group-hover:text-gold-dark transition-colors">Google Ads</div>
+            <div class="text-xs uppercase tracking-wider text-navy-600 mt-1">ANZ Mid-Market Leadership</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Summary Card -->
+      <div class="lg:col-span-5">
+        <div class="relative mx-auto max-w-md lg:max-w-none">
+          <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-gold/25 to-navy-900/10 blur-xl opacity-60 pointer-events-none"></div>
+          <div class="relative rounded-2xl bg-white p-8 border border-navy-900/10 shadow-xl space-y-6">
+            <div class="flex items-center gap-5 pb-6 border-b border-navy-900/10">
+              <div class="relative shrink-0">
+                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-gold/40 to-navy-900/15 blur-sm opacity-80 pointer-events-none"></div>
+                <img id="hero-portrait" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCACQAJADAREAAhEBAxEB/9sAQwAIBgYHBgUIBwcHCQkICgwVDgwLCwwZEhMPFR4bIB8eGx0dISUwKSEjLSQdHSo5Ki0xMzY2NiAoOz86ND4wNTYz/9sAQwEJCQkMCwwYDg4YMyIdIjMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMz/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD13FABigBcUAGKAFxQAu2gBdtABtoEGKAExQAbaBhtoEJimFxMUCDbQAmKAEIoATGKAH4pFCgUAOxQAmKBCgUALigZla54isdBty9w4MhGVjB5P19KAPMtX+I+t3BY2WLaLsdoz+vWhMGjFj+IHiYrIv29nGMsSoyv0qroXKW7Hxl4luJ94v5WX02g/pQ2gsdbpnj66DCO9iSUjqF+R/yNTcLHbaZqtnq8BltZM4+8p4ZfqKALpFACYpgFAhMUAGKAGkUAPFIYuKAFAoAXFAC4oGVNRvk0+zeZyOBxmk3YDym5jfVr57m5LSFmyqn/AD/+qs+Y0USje6fb3CmOJzLJ02QjIH1NHtEty40pS2Ktr4UuwkqsoUSDA496Trx6GqwsixHo2saQN8EyOg6ptApe1UgeFki1HNbax/o9zEYbocgEbT9RVXtqYuPRl7Q7i50rVlDv+9Qfe6eanvTUiHE9Tt50uoFljOVYVoRYkxQIMUxCYoASgBCKAHCkMdigBcUDFxQAE4Ge1AHD+K71rq4is4z8rNz9B1rKbNIROYmd7mQ2VkDt6TTdvoKxcuU6KdJyOgsLCOGFYokAAH51g25HoxSijRSz4oUROYklkNpyuRTtYFO5y2t6PvHmQAh0ORt6g1pCdtGY1aakropwXDXFuksgxc2zfNjv/wDrH61qcLVjuPD995UohZv3cnT61pBmUkdVWhAuKYhCKBDcUAJQA8CkMdigBQKYgIpFFPUJ/JtmPfFTJ2Q0rs8x1/URbSyyA/vRHge24/8A1hWO5sTeHYj/AGdFkcnk1z1Nz0KOkTp7WI44qYo0bLoUgdK01M9BHVsdKTuCsZ00YJNSXc4zWm/s/U45sYjl+V62p6qxyVlbU1tOvM2Mbofnhbafw6fpitE7HO1c9FsJxc2Uco6MoNbnOy1TENNADaAENAEgoGLSAUUALQMwddfonas6jLgePa1cG51q8jzwZViX8h/gajoao6y3lmjt1t7Py0cDBkk6L/iawsr3Z2a7RIhqet2coCXlpcc/dGM/lWnu9iPevudXpepPeWoeRQHA+YDsalMvlMbVPEOpx3DxWywJGDje/anGSYpRa2K8FzqBHmNqNrcE9YgP5EUSUQjzFHXYRqGlTZUq6LuAPUEVMPdkOouaJzHhrVGF1Nbu5IbaefXp/QVvNHFHU9k8KzebpCjOdpIrWGxhU0kbvarMxpoASmO40igZJUFDhQIUUALQM5vxFlGBHcVlUNIHiz7z4qVDja9yrnjn/PFJ/CaxXvI6zW9JvbqxP2KXyy3U+1c8JJPU7JxbWhn2PhVI2BPnA4HR8ktjrn69sV0+1i1scqoTUr3Ow0hHszNGzZ3IDn3xzXK3qdsVdGRqehjUUDyb2GD8oOAGz19+K1pSUdzGrByVjGTwjcx3cElqzwlWJdi3Dj6dqupVi+hnSozjq2dFeWrQ6c6O2WKEfpXOnqdLXus8u0QOmqB2PX5QMf7Vdc9jgitT3TwQ+7SW5/j/AKVVPYwrfEdSBWhkNNACUANqhkoFZlC0ALmgA3AUBcwPEmDCh781nVWhdN6nj2oIIPE8LDpuz/h/Wo+ydMPiR31hLvjVSMiuRnpxV0bCQZjJCir1sZySuU7WJp7iUqCcfLxU6sd0ia0Ta7REjI4wapIlssTQmJN2KbVhxaehzerSEqRSjuOpojz+O0+z6nGgGCG5H05re9zjmktD1bwY5hgVD0YCtaZxVdWdqORWpiNNADaAEIpjJKgoQ0AJupgMLVQjntdk3yKnoDXPVfQ2po8s1cOdatZU6hhn6c5/SoWxstJJnY6TcI0UbA5BGRXPJano05XRuRzmcFFbCDqRRcHYxRp+t293NJbXSSROeFPy7apWIkXrHS54JZWurx5S5zjAG0+3tTYJk0l46H7NK2WAyD6ipbZcbbmPdzQLKslw22PcBn37U4oipM49EeXXZJ5P7zGtlscc5XPQ/D/yRKR2xWkDmmdvGcoD61sYA1ADaAEpjHE4qRjGcCiwEZenYCNnxTA5m9l868bnoD/KuSTvI6YqyOGnjD3hb+4MfmahuyNErmroEkUqmNiP3blD7dx/OokdVJ6WNG9e40kn7PskjHO1iRRFJ6M0Su9SKPxBqYXclgkq/wCwc/1rVQRt7JDjrepFgslrEjN2Y4I/ImhwRLpJK5oQp5iGa5Ks4Hy47VizFGVqMYlkhhA/i3n2xVw0VzGt0RhXUXl6sxxwVP51cdjnZ2PhxwziL1FaQ3MpnbW5zCvtxW6Odj2oAQ0xpDTQMRzSSGQMaoQwmkBXupPLgdvQUpbDW5x8t4F81yedjH9K4+p09DnbP/SlusEGTZvAH1/z+dKSLizndH19bXxQ8IL7LgfOhH3WXv8Al/KrlT9wqlU9+x6MkyXoRSwORwfUVz7HXcD4fOd0M8kYPUKatTkWptaE8Oi/Z/mJLN/eY5NJyb3Jcm92RXFwkW5d3C9TnrSRJijUkj1WRZzjIH5dh+JNapaHLVfvEF5Ms8zTghY1AYt9apIyNDQdUjhmifPCkflVR0ZM1dHpVlcR3EPmROGQ88V0I5mWCc0CENMoKAGPQgITTAjNIDK1yXytNkYdcVM9io7nltzrCm3uyzYCrt/Mj+lYRg2buSRlafrkVhqSyNKg+UqybhyDVum+xKqIwbBluPHEUisGVpGAI9waucX7JhSkvbI76VbnTnEkRJQHOPSuPRno2NS28YiNAsikGjlZV11JJ/FwnBWMEsego5e4r9iCzhnvJhLcZWMHIX1+tHoScB4w1a6svFNysDqYgUDIyg4OAePSu6jRTp3POxFW1Rojk8RRz2oiXKRINoXOSR60vYyuSqqsT2niWO3CsAcA4IPpSdGQ/axPQfCnjW2MyotyhV+qO2DSjGUd0TLlZ6hDMk8KyRnKsMirMiTFMoDxQDI3oAruQoJJAHqaYGHqPivRNMDfaNQi3D+BDuP6U1CTJc0jgPEXxJS8RoNPtf3eMF5Tz+QrT2F1qR7az0POby98y2kUN88zgsAPSrjTSFKbZmNGoAPc1pYzuy9o5MOp2so6iZf51nVXuM2oNqpE9qa1W4t/qK8Y99Izjols5JdBxVJg0WYtLtoceXGoPsKGFjRSMRRk+goSBniGvO1xrmoyvyftDfkOK9eirQR4GIf7xmaqDcOwNamNyQDAGDRYLjwSrZAxRYVzodG8a67oZUWl9J5Y/wCWUh3J+RqXCLDmaPTPD3xes7xkg1mAWrnjz48lPxHUfrWUqNtjWNXud9purWGsW5uNPuo7iIHBZD0PvWLi1uXzJ7HlV98W9QaSUW1pAiNxHuBJX3966FRRn7VnGar4r1jVWP2u+lZT/AGwv5CtFBIzbbMZpWbuTVWENcEpkn8KLAQNGWXPagBhXJApDLlgB/aFtx/y1X+YqKnws1pfGj2+yz9lRsV4kj6OGqLv2eKRcleTQgYC1jX7q07iGSRF1b0ApomR4TrKbNVv1PXzj/OvYo/AjwcQrVGZ6LnArU5ySNMHFAFgouOnNMCBxikAzdigDvfhNrb2XiaKzZj5N4hjIzxuHKn9MfjWdRXiVB2kcdIcsmOhzWpJGeTQA8ACgBfvcdqYDZeF2jvSAgAwc1Iya2k8iaOYjIRwx/A0pK6aLg7STPeNLminsIpYiGikQMpHoa8WSs7M+kjZq6NPy0ULh85HpSsK7e48xAHB44p2FcryrtjfHTBoSGeB6/htb1Aj/nsRXrUfgR4OK/iszIzitjmJSQCD60wJRg0ARSEDjvQBA/CmkBs+Db2LTvEml3VwcRRzKzn0FDV4ivqZ0cuVGf4T+lAx7kLTEQGXB60DJ4juQkcgUANDbyTg+lADHGO9IY12Pks3YDikC3O48AeLorGMaZqEm2An9zIeiH0PtXDXo395Hq4TE29yR6kJQ6gqwKnkEGuJqx6sWtyQSkdTmglpdDnfE3i6w0S0kXzFluyp2Qqefx9BW9Om5M5a1aMF5nirXEl48txNy8zbiR616cFZWPFqycpXZGo6+1WZDerYB/GgRODggAmgCOY80hkUn+pb34oAlDBTgdhgVQhsh8tyQPkPBpMZOG8223dxwaCepQ35fFIovWhK7h+NOwrkzKGGehosMrOGAwaQCyLiEg+nSgOpWhbCismbI17LxBqdggW1v541HRQxK/l0rOVOL3RvGvOOzLc3jDXZ4yj6lMAeDtwv8qn2UF0KeJqPS5hXMzMrszFmPJJOSa0Rg3cS2OLX2Nbx2MZ7hnqfWmQKCKQDlIDcelADJGyaBjZciJeM80yeo1WxyTQBNI2DhhlDSuMLRgpePOVPSmhSKTf68j3pFdDQgOD9RVEomyaQxCaAI5eY2+lIa3KUJ+UVkzYmwKQBSGMnIELfSmCHxcWgrVbGUtxuTTIEJwKAEV+pNA7D41Mje1ICK5mIbag6cU7gkuoxSWHP50Af/9k=" alt="Tabitha Bertron — Head of Sales GTM, Startups at Google Cloud" class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover object-top border-2 border-gold/60 shadow-md bg-navy-800">
+                <span class="absolute -bottom-1.5 -right-1.5 w-6 h-6 rounded-full bg-navy-900 text-gold border border-gold/60 flex items-center justify-center heading-serif text-xs font-bold shadow-sm">TB</span>
+              </div>
+              <div>
+                <h2 class="heading-serif text-2xl sm:text-3xl font-bold text-navy-900 leading-tight">Tabitha Bertron</h2>
+                <p class="text-xs text-gold-dark uppercase tracking-widest font-semibold mt-1">Silicon Valley Executive &amp; Advisor</p>
+                <p class="text-xs text-navy-600 mt-1 font-medium">Google Cloud Startups · HBS Alumni</p>
+              </div>
             </div>
 
-            <form id="mentorship-form" onsubmit="handleMentorshipSubmit(event)" class="space-y-4">
-                <!-- Preferred Weekly Time Slot Selector -->
-                <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-2">1. Select Preferred Weekly Slot (Pacific Time)</label>
-                    <input type="hidden" id="selected-slot-input" value="Tuesday · 10:30 AM – 11:00 AM PT" required>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="slot-buttons-container">
-                        <button type="button" data-slot="Tuesday · 10:30 AM – 11:00 AM PT" onclick="selectTimeSlot(this)" class="slot-btn p-3 rounded-xl border border-gold bg-navy-800 text-white text-left transition-all">
-                            <div class="text-xs font-bold">Tuesday · Slot 1</div>
-                            <div class="text-xs text-cream-200 mt-0.5">10:30 AM – 11:00 AM PT</div>
-                            <div class="text-xs text-gold mt-1 font-medium next-tue-label"></div>
-                        </button>
-                        <button type="button" data-slot="Tuesday · 11:00 AM – 11:30 AM PT" onclick="selectTimeSlot(this)" class="slot-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all">
-                            <div class="text-xs font-bold">Tuesday · Slot 2</div>
-                            <div class="text-xs text-navy-600 mt-0.5">11:00 AM – 11:30 AM PT</div>
-                            <div class="text-xs text-gold-dark mt-1 font-medium next-tue-label"></div>
-                        </button>
-                        <button type="button" data-slot="Friday · 11:00 AM – 11:30 AM PT" onclick="selectTimeSlot(this)" class="slot-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all">
-                            <div class="text-xs font-bold">Friday · Slot 1</div>
-                            <div class="text-xs text-navy-600 mt-0.5">11:00 AM – 11:30 AM PT</div>
-                            <div class="text-xs text-gold-dark mt-1 font-medium next-fri-label"></div>
-                        </button>
-                        <button type="button" data-slot="Friday · 11:30 AM – 12:00 PM PT" onclick="selectTimeSlot(this)" class="slot-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all">
-                            <div class="text-xs font-bold">Friday · Slot 2</div>
-                            <div class="text-xs text-navy-600 mt-0.5">11:30 AM – 12:00 PM PT</div>
-                            <div class="text-xs text-gold-dark mt-1 font-medium next-fri-label"></div>
-                        </button>
-                    </div>
-                </div>
-
-                <div>
-                    <label for="mentor-topic" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1">2. Session Topic / Track</label>
-                    <select id="mentor-topic" required class="w-full px-4 py-3 rounded-xl border border-navy-900/15 text-xs text-navy-900 bg-white focus:outline-none focus:border-gold">
-                        <option value="Startup GTM & Cloud Scale Strategy">Startup GTM &amp; Cloud Scale Strategy</option>
-                        <option value="Career Mentorship & Sales Leadership">Career Mentorship &amp; Sales Leadership</option>
-                        <option value="HBS Alumni & Ecosystem Connection">HBS Alumni &amp; Ecosystem Connection</option>
-                        <option value="Speaking / Keynote / Panel Inquiry">Speaking / Keynote / Panel Inquiry</option>
-                        <option value="General Coaching / Paying It Forward">General Coaching / Paying It Forward</option>
-                    </select>
-                </div>"""
-
-new_modal = """            <div>
-                <span class="text-xs font-bold uppercase tracking-widest text-gold-dark">Paying It Forward · 30-Min Session</span>
-                <h3 id="modal-title" class="heading-serif text-3xl font-bold text-navy-900 mt-1">Request a 30-Min Session</h3>
-                <p class="text-xs text-charcoal/80 mt-1.5">Choose a focus area and share a brief note below. I will review your request and reply directly with times that work.</p>
+            <div class="space-y-4 text-sm text-charcoal">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-gold-dark shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span><strong class="text-navy-900">Google Cloud Startups:</strong> Driving GTM strategy, AI compute enablement, and co-selling for Bay Area ventures.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-gold-dark shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span><strong class="text-navy-900">LinkedIn Leadership:</strong> Led Solutions Consulting across North America to drive enterprise technology adoption.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-gold-dark shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span><strong class="text-navy-900">Google Ads ANZ:</strong> Led mid-market sales, customer growth, and digital ad strategy across Australia and New Zealand.</span>
+              </div>
             </div>
 
-            <form id="mentorship-form" onsubmit="handleMentorshipSubmit(event)" class="space-y-4">
-                <!-- 3 Topic Ideas Selector -->
-                <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-2">Select a Focus Area</label>
-                    <input type="hidden" id="mentor-topic" value="Startup Soundboard" required>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5" id="topic-buttons-container">
-                        <button type="button" data-topic="Startup Soundboard" onclick="selectSessionTopic(this)" class="topic-btn p-3 rounded-xl border border-gold bg-navy-800 text-white text-left transition-all shadow-sm">
-                            <div class="text-xs font-bold">Startup Soundboard</div>
-                            <div class="text-xs text-cream-200 mt-0.5">GTM &amp; Cloud Scale</div>
-                        </button>
-                        <button type="button" data-topic="Career Navigation" onclick="selectSessionTopic(this)" class="topic-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all">
-                            <div class="text-xs font-bold">Career Navigation</div>
-                            <div class="text-xs text-navy-600 mt-0.5">Leadership &amp; Growth</div>
-                        </button>
-                        <button type="button" data-topic="HBS & Alumni Connection" onclick="selectSessionTopic(this)" class="topic-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all">
-                            <div class="text-xs font-bold">HBS &amp; Alumni</div>
-                            <div class="text-xs text-navy-600 mt-0.5">Network &amp; Sparring</div>
-                        </button>
-                    </div>
-                </div>"""
-
-assert old_modal in content, "old_modal not found"
-content = content.replace(old_modal, new_modal, 1)
-
-# 3. Update the confirmation message copy in #modal-success
-old_confirm_copy = """                    <p class="text-xs text-charcoal/85 max-w-sm mx-auto leading-relaxed">
-                        Thank you for reaching out! Your request has been received and we will follow up with a calendar invitation to confirm your 30-minute session.
-                    </p>"""
-new_confirm_copy = """                    <p class="text-xs text-charcoal/85 max-w-sm mx-auto leading-relaxed">
-                        Thank you for reaching out! Your request has been received—I will review your note and get back to you with a few times that work.
-                    </p>"""
-assert old_confirm_copy in content, "old_confirm_copy not found"
-content = content.replace(old_confirm_copy, new_confirm_copy, 1)
-
-# 4. Replace the old slot JS functions with selectSessionTopic()
-old_slot_js = """        // Compute upcoming Tuesday and Friday dates for the slot selector
-        function getNextDayOfWeek(dayIndex) {
-            const now = new Date();
-            const result = new Date(now);
-            const currentDay = now.getDay();
-            let daysAhead = (dayIndex - currentDay + 7) % 7;
-            if (daysAhead === 0) daysAhead = 7;
-            result.setDate(now.getDate() + daysAhead);
-            return result.toLocaleDateString(\x27en-US\x27, { month: \x27short\x27, day: \x27numeric\x27 });
-        }
-
-        function populateUpcomingSlotDates() {
-            const nextTue = getNextDayOfWeek(2); // Tuesday
-            const nextFri = getNextDayOfWeek(5); // Friday
-            document.querySelectorAll(\x27.next-tue-label\x27).forEach(el => {
-                el.textContent = `Next: Tue, ${nextTue}`;
-            });
-            document.querySelectorAll(\x27.next-fri-label\x27).forEach(el => {
-                el.textContent = `Next: Fri, ${nextFri}`;
-            });
-        }
-
-        function selectTimeSlot(selectedBtn) {
-            const slotValue = selectedBtn.getAttribute(\x27data-slot\x27);
-            const dateBadge = selectedBtn.querySelector(\x27div:last-child\x27).textContent;
-            document.getElementById(\x27selected-slot-input\x27).value = `${slotValue} (${dateBadge})`;
-
-            document.querySelectorAll(\x27.slot-btn\x27).forEach(btn => {
-                const sub = btn.querySelectorAll(\x27div\x27)[1];
-                const dateLine = btn.querySelectorAll(\x27div\x27)[2];
-                if (btn === selectedBtn) {
-                    btn.className = \x27slot-btn p-3 rounded-xl border border-gold bg-navy-800 text-white text-left transition-all shadow-sm\x27;
-                    if (sub) sub.className = \x27text-xs text-cream-200 mt-0.5\x27;
-                    if (dateLine) dateLine.className = \x27text-xs text-gold mt-1 font-medium\x27;
-                } else {
-                    btn.className = \x27slot-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all\x27;
-                    if (sub) sub.className = \x27text-xs text-navy-600 mt-0.5\x27;
-                    if (dateLine) dateLine.className = \x27text-xs text-gold-dark mt-1 font-medium\x27;
-                }
-            });
-        }"""
-
-new_topic_js = """        function selectSessionTopic(selectedBtn) {
-            const topicValue = selectedBtn.getAttribute(\x27data-topic\x27);
-            document.getElementById(\x27mentor-topic\x27).value = topicValue;
-
-            document.querySelectorAll(\x27.topic-btn\x27).forEach(btn => {
-                const sub = btn.querySelectorAll(\x27div\x27)[1];
-                if (btn === selectedBtn) {
-                    btn.className = \x27topic-btn p-3 rounded-xl border border-gold bg-navy-800 text-white text-left transition-all shadow-sm\x27;
-                    if (sub) sub.className = \x27text-xs text-cream-200 mt-0.5\x27;
-                } else {
-                    btn.className = \x27topic-btn p-3 rounded-xl border border-navy-900/15 bg-cream-50 text-navy-900 text-left hover:border-gold transition-all\x27;
-                    if (sub) sub.className = \x27text-xs text-navy-600 mt-0.5\x27;
-                }
-            });
-        }"""
-
-assert old_slot_js in content, "old_slot_js not found"
-content = content.replace(old_slot_js, new_topic_js, 1)
-
-# 5. Update openMentorshipWithQuiz, openMentorshipModal, handleMentorshipSubmit, and init calls
-old_modal_js_block = """        function openMentorshipWithQuiz() {
-            const notesField = document.getElementById(\x27mentor-notes\x27);
-            const topicSelect = document.getElementById(\x27mentor-topic\x27);
-            topicSelect.value = "Startup GTM & Cloud Scale Strategy";
-            notesField.value = `${getPlaybookSummaryText()}\\n\\nWhat I\x27d love to jam on during our 30-min session: `;
-            openMentorshipModal();
-        }
-
-        function toggleInlineVideo() {
-            const container = document.getElementById(\x27video-embed-container\x27);
-            const iframe = document.getElementById(\x27youtube-iframe\x27);
-            const btn = document.getElementById(\x27video-toggle-btn\x27);
-
-            if (container.classList.contains(\x27hidden\x27)) {
-                iframe.src = "https://www.youtube.com/embed/4mo_bAp-J5Y?rel=0";
-                container.classList.remove(\x27hidden\x27);
-                btn.textContent = "Hide Video Preview";
-            } else {
-                iframe.src = "";
-                container.classList.add(\x27hidden\x27);
-                btn.textContent = "Preview Inline";
-            }
-        }
-
-        function openMentorshipModal(presetTopic) {
-            const topicSelect = document.getElementById(\x27mentor-topic\x27);
-            if (presetTopic === \x27hbs\x27) {
-                topicSelect.value = "HBS Alumni & Ecosystem Connection";
-            } else if (presetTopic === \x27speaking\x27) {
-                topicSelect.value = "Speaking / Keynote / Panel Inquiry";
-            }
-            resetMentorshipModal();
-            document.getElementById(\x27mentorship-modal\x27).classList.remove(\x27hidden\x27);
-            document.body.style.overflow = \x27hidden\x27;
-        }
-
-        function closeMentorshipModal() {
-            document.getElementById(\x27mentorship-modal\x27).classList.add(\x27hidden\x27);
-            document.body.style.overflow = \x27\x27;
-        }
-
-        function handleModalBackdropClick(e) {
-            if (e.target.id === \x27mentorship-modal\x27) {
-                closeMentorshipModal();
-            }
-        }
-
-        function resetMentorshipModal() {
-            document.getElementById(\x27mentorship-form\x27).classList.remove(\x27hidden\x27);
-            document.getElementById(\x27modal-success\x27).classList.add(\x27hidden\x27);
-            const submitBtn = document.getElementById(\x27submit-request-btn\x27);
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Submit 30-Min Session Request";
-            }
-        }
-
-        async function handleMentorshipSubmit(e) {
-            e.preventDefault();
-            const submitBtn = document.getElementById(\x27submit-request-btn\x27);
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Submitting Request...";
-
-            const slot = document.getElementById(\x27selected-slot-input\x27).value;
-            const topic = document.getElementById(\x27mentor-topic\x27).value;
-            const name = document.getElementById(\x27mentor-name\x27).value.trim();
-            const email = document.getElementById(\x27mentor-email\x27).value.trim();
-            const linkedin = document.getElementById(\x27mentor-linkedin\x27).value.trim() || "Not provided";
-            const notes = document.getElementById(\x27mentor-notes\x27).value.trim();
-
-            const summaryText = `• Preferred Slot: ${slot}\\n• Track: ${topic}\\n• Name: ${name} (${email})\\n• Topics: ${notes}`;
-            document.getElementById(\x27formatted-request-preview\x27).textContent = summaryText;
-
-            try {
-                await fetch(_ep, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Accept": "application/json"
-                    },
-                    body: JSON.stringify({
-                        _subject: `New 30-Min Session Request: ${name} (${slot})`,
-                        Preferred_Time_Slot: slot,
-                        Session_Track: topic,
-                        Requester_Name: name,
-                        Requester_Email: email,
-                        LinkedIn_Or_Website: linkedin,
-                        Topics_To_Cover: notes
-                    })
-                });
-            } catch (err) {
-                // Silent fallback so UX always completes cleanly
-            }
-
-            document.getElementById(\x27mentorship-form\x27).classList.add(\x27hidden\x27);
-            document.getElementById(\x27modal-success\x27).classList.remove(\x27hidden\x27);
-            e.target.reset();
-        }"""
-
-new_modal_js_block = """        function openMentorshipWithQuiz() {
-            const notesField = document.getElementById(\x27mentor-notes\x27);
-            notesField.value = `${getPlaybookSummaryText()}\\n\\nWhat I\x27d love to jam on during our 30-min session: `;
-            openMentorshipModal(\x27startup\x27);
-        }
-
-        function toggleInlineVideo() {
-            const container = document.getElementById(\x27video-embed-container\x27);
-            const iframe = document.getElementById(\x27youtube-iframe\x27);
-            const btn = document.getElementById(\x27video-toggle-btn\x27);
-
-            if (container.classList.contains(\x27hidden\x27)) {
-                iframe.src = "https://www.youtube.com/embed/4mo_bAp-J5Y?rel=0";
-                container.classList.remove(\x27hidden\x27);
-                btn.textContent = "Hide Video Preview";
-            } else {
-                iframe.src = "";
-                container.classList.add(\x27hidden\x27);
-                btn.textContent = "Preview Inline";
-            }
-        }
-
-        function openMentorshipModal(presetTopic) {
-            const buttons = document.querySelectorAll(\x27.topic-btn\x27);
-            if (presetTopic === \x27hbs\x27 && buttons[2]) {
-                selectSessionTopic(buttons[2]);
-            } else if (presetTopic === \x27career\x27 && buttons[1]) {
-                selectSessionTopic(buttons[1]);
-            } else if (buttons[0]) {
-                selectSessionTopic(buttons[0]);
-            }
-            resetMentorshipModal();
-            document.getElementById(\x27mentorship-modal\x27).classList.remove(\x27hidden\x27);
-            document.body.style.overflow = \x27hidden\x27;
-        }
-
-        function closeMentorshipModal() {
-            document.getElementById(\x27mentorship-modal\x27).classList.add(\x27hidden\x27);
-            document.body.style.overflow = \x27\x27;
-        }
-
-        function handleModalBackdropClick(e) {
-            if (e.target.id === \x27mentorship-modal\x27) {
-                closeMentorshipModal();
-            }
-        }
-
-        function resetMentorshipModal() {
-            document.getElementById(\x27mentorship-form\x27).classList.remove(\x27hidden\x27);
-            document.getElementById(\x27modal-success\x27).classList.add(\x27hidden\x27);
-            const submitBtn = document.getElementById(\x27submit-request-btn\x27);
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Submit 30-Min Session Request";
-            }
-        }
-
-        async function handleMentorshipSubmit(e) {
-            e.preventDefault();
-            const submitBtn = document.getElementById(\x27submit-request-btn\x27);
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Submitting Request...";
-
-            const topic = document.getElementById(\x27mentor-topic\x27).value;
-            const name = document.getElementById(\x27mentor-name\x27).value.trim();
-            const email = document.getElementById(\x27mentor-email\x27).value.trim();
-            const linkedin = document.getElementById(\x27mentor-linkedin\x27).value.trim() || "Not provided";
-            const notes = document.getElementById(\x27mentor-notes\x27).value.trim();
-
-            const summaryText = `• Focus Area: ${topic}\\n• Name: ${name} (${email})\\n• Note: ${notes}`;
-            document.getElementById(\x27formatted-request-preview\x27).textContent = summaryText;
-
-            try {
-                await fetch(_ep, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Accept": "application/json"
-                    },
-                    body: JSON.stringify({
-                        _subject: `New 30-Min Session Request: ${name} (${topic})`,
-                        Focus_Area: topic,
-                        Requester_Name: name,
-                        Requester_Email: email,
-                        LinkedIn_Or_Website: linkedin,
-                        Topics_To_Cover: notes
-                    })
-                });
-            } catch (err) {
-                // Silent fallback so UX always completes cleanly
-            }
-
-            document.getElementById(\x27mentorship-form\x27).classList.add(\x27hidden\x27);
-            document.getElementById(\x27modal-success\x27).classList.remove(\x27hidden\x27);
-            e.target.reset();
-        }"""
-
-assert old_modal_js_block in content, "old_modal_js_block not found"
-content = content.replace(old_modal_js_block, new_modal_js_block, 1)
-
-# 6. Remove populateUpcomingSlotDates() and slot initialization at the bottom
-old_bottom_init = """        document.getElementById(\x27year\x27).textContent = new Date().getFullYear();
-        populateUpcomingSlotDates();
-        // Initialize default slot with upcoming Tuesday date
-        const firstSlotBtn = document.querySelector(\x27.slot-btn\x27);
-        if (firstSlotBtn) selectTimeSlot(firstSlotBtn);"""
-
-new_bottom_init = """        document.getElementById(\x27year\x27).textContent = new Date().getFullYear();"""
-
-assert old_bottom_init in content, "old_bottom_init not found"
-content = content.replace(old_bottom_init, new_bottom_init, 1)
-
-open(idx_path, "w", encoding="utf-8").write(content)
-open("/google/data/rw/personal-agents/be/bertron/corpagent-eng-bertron/.gemini/jetski/brain/335c358f-cb56-46b4-86e6-0bf3c7ccc23f/tabithabertron_preview.html", "w", encoding="utf-8").write(content)
-
-# Update download_index_widget.html payload as well
-widget_path = "/google/data/rw/personal-agents/be/bertron/corpagent-eng-bertron/.gemini/jetski/brain/335c358f-cb56-46b4-86e6-0bf3c7ccc23f/download_index_widget.html"
-w_content = open(widget_path, "r", encoding="utf-8").read()
-start_tag = "<textarea id=\"raw-html-payload\" class=\"hidden\">"
-end_tag = "</textarea>"
-s_idx = w_content.index(start_tag) + len(start_tag)
-e_idx = w_content.index(end_tag, s_idx)
-w_content = w_content[:s_idx] + html.escape(content) + w_content[e_idx:]
-open(widget_path, "w", encoding="utf-8").write(w_content)
-print("Successfully simplified 30-min session form and updated all files! Total bytes:", len(content))
-'`
-
-Updating the 30-minute session flow now to remove fixed time blocks and feature your 3 focus areas (**Startup Soundboard**, **Career Navigation**, and **HBS & Alumni Connection**).
-
-Listed 0 tasks
-Edited download_index_widget.html
-Edited tabithabertron_preview.html
-
-I have updated both the **Paying It Forward** section and the **Request a 30-Min Session** modal in [index.html](file:///google/data/rw/personal-agents/be/bertron/corpagent-eng-bertron/.gemini/jetski/scratch/tabithabertron-site/index.html) and [tabithabertron_preview.html](file:///google/data/rw/personal-agents/be/bertron/corpagent-eng-bertron/.gemini/jetski/brain/335c358f-cb56-46b4-86e6-0bf3c7ccc23f/tabithabertron_preview.html):
-
-1. **Removed All Fixed Days & Times:** All Tuesday/Friday time blocks have been removed from the page and the modal.
-2. **Added Your 3 Focus Areas:** Both the *Paying It Forward* card and the session request modal now feature 3 selectable cards:
-   * **1. Startup Soundboard** (*Early-stage GTM strategy, cloud scale architecture, and enterprise co-sell positioning*)
-   * **2. Career Navigation** (*Scaling high-performing GTM teams, leadership transitions, and global career growth*)
-   * **3. HBS & Alumni Connection** (*Case-method sparring, fellow alumni networking, and executive community connection*)
-3. **Streamlined Request Form:** Visitors simply pick one of the 3 focus areas, enter their Name, Email, optional LinkedIn/Website, and a brief note, and see: *"Submit a quick note and I will reply directly with times that work for our 30-minute conversation."*
-
-<agent-embed src="file:///google/data/rw/personal-agents/be/bertron/corpagent-eng-bertron/.gemini/jetski/brain/335c358f-cb56-46b4-86e6-0bf3c7ccc23f/download_index_widget.html"></agent-embed>
-
-Click **📋 Copy Complete index.html Code** above and paste it into your GitHub `executive-website/index.html` file to publish the update to **tabithabertron.com**!
+            <div class="pt-4 border-t border-navy-900/5 space-y-4">
+              <blockquote class="p-4 rounded-xl bg-cream-100 border border-navy-900/5 text-xs text-navy-700 italic leading-relaxed">
+                "Effective GTM isn't just about selling a product—it's about building repeatable value, technical alignment, and trust with founders."
+              </blockquote>
